@@ -1,7 +1,7 @@
 ---
 layout: post-minimal
 title: '제너레이터 이해하기' 
-date: 2016-08-10 00:00:00 +0900
+date: 2016-10-02 00:00:00 +0900
 categories:
 - learn-n-think
 tags:
@@ -87,10 +87,6 @@ iterator                                numbers(generator instance)
 - 호출하는 쪽에서 이터레이션의 시작과 다음 이터레이션을 제어할 수 있다(On-demand Iteration).
 - 어디까지 실행했는지 상태를 가진 객체다.
 
-## 3. 응용
+<div class="spacer">• • •</div>
 
-앞 절의 예제에서 데이터는 1, 2 두개 뿐이다. 백만개를 메모리에 올린다고 가정해 보면...
-
-http://www.slideshare.net/wan2land/php-gcm-feat-async-generator
-
-
+정리가 너무 안된다. PHP, Ruby 코드는 썼다가 전부 지웠다. 
