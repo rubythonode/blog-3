@@ -5,15 +5,13 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Oct 2016 16:04:37 +0900</pubDate>
-    <lastBuildDate>Sun, 02 Oct 2016 16:04:37 +0900</lastBuildDate>
+    <pubDate>Mon, 31 Oct 2016 22:42:56 +0900</pubDate>
+    <lastBuildDate>Mon, 31 Oct 2016 22:42:56 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>제너레이터 이해하기</title>
-        <description>&lt;p&gt;제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/High-Current_Copper-Brush_Commutated_Dynamo.jpg/1920px-High-Current_Copper-Brush_Commutated_Dynamo.jpg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/High-Current_Copper-Brush_Commutated_Dynamo.jpg/1920px-High-Current_Copper-Brush_Commutated_Dynamo.jpg&quot; alt=&quot;발전기&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 자바스크립트 및 PHP 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다.&lt;/p&gt;
 
 &lt;!--more--&gt;
 &lt;div class=&quot;spacer&quot;&gt;• • •&lt;/div&gt;
@@ -91,9 +89,47 @@
   &lt;li&gt;어디까지 실행했는지 상태를 가진 객체다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;spacer&quot;&gt;• • •&lt;/div&gt;
+&lt;h2 id=&quot;php&quot;&gt;3. 예제 - PHP&lt;/h2&gt;
 
-&lt;p&gt;정리가 너무 안된다. PHP, Ruby 코드는 썼다가 전부 지웠다.&lt;/p&gt;
+&lt;p&gt;실전에 사용한 예제는 AWS PHP SDK에서 찾아 볼 수 있다. AWS SDK에서 이터레이션은 거의 대부분 제너레이터를 사용하는 것을 볼 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// https://github.com/aws/aws-sdk-php/blob/master/src/functions.php#L49
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Aws&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;sd&quot;&gt;/**
+ * Applies a map function $f to each value in a collection.
+ *
+ * @param mixed    $iterable Iterable sequence of data.
+ * @param callable $f        Map function to apply.
+ *
+ * @return \Generator
+ */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$iterable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callable&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$iterable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;이렇게 사용할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$generator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Aws\map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$generator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PHP_EOL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;이 예제에서는 큰 차이를 못 느낄 수 있지만, 배열 요소 하나가 큰 데이터를 가지고 있을 때는 제너레이터를 쓰지 않고는 &lt;code class=&quot;highlighter-rouge&quot;&gt;php.ini&lt;/code&gt; 설정에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;memory_limit&lt;/code&gt; 값을 엄청 늘려야 할 것이다. 배열 순회에 필요한 모든 데이터를 메모리에 적재한 후 실행하는 것과, 이번 순회에 필요한 데이터만 읽어오는 차이가 있다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Oct 2016 00:00:00 +0900</pubDate>
         <link>http://blog.appkr.kr/learn-n-think/understanding-generator/</link>

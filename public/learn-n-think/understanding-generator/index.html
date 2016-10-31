@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다."/>
+  <meta name="description" content="제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 자바스크립트 및 PHP 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다."/>
   <meta name="google-site-verification" content="ToXKBimREnz49pDNot4b-N9ZJgYcKXPPsHsjhg4Zzuc" />
   <meta name="naver-site-verification" content="7cebcc8e5493169f5401870d9ce57f48d18491cd"/>
 
@@ -20,7 +20,7 @@
 
   <!-- Google+ Meta -->
   <meta itemprop="name" content="제너레이터 이해하기">
-  <meta itemprop="description" content="제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다.">
+  <meta itemprop="description" content="제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 자바스크립트 및 PHP 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@appkrs" />
   <meta name="twitter:title" content="제너레이터 이해하기" />
-  <meta name="twitter:description" content="제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다." />
+  <meta name="twitter:description" content="제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 자바스크립트 및 PHP 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다." />
   <meta name="twitter:image" content="" />
   <meta name="twitter:domain" content="blog.appkr.kr">
 
@@ -136,9 +136,7 @@
       </div>
 
       <div class="box-body">
-        <p>제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다.</p>
-
-<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/High-Current_Copper-Brush_Commutated_Dynamo.jpg/1920px-High-Current_Copper-Brush_Commutated_Dynamo.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/High-Current_Copper-Brush_Commutated_Dynamo.jpg/1920px-High-Current_Copper-Brush_Commutated_Dynamo.jpg" alt="발전기" /></a></p>
+        <p>제너레이터(generator)는 대용량 데이터를 순회하며 작업할 때 유용한 기능이며, 대부분의 프로그래밍 언어에서 찾아볼 수 있다. 언어만 다를 뿐 개념은 모두 같다. 이 포스트는 자바스크립트 및 PHP 제너레이터에 대한 필자 나름의 이해 방식을 기록한 것이다.</p>
 
 <!--more-->
 <div class="spacer">• • •</div>
@@ -216,9 +214,47 @@
   <li>어디까지 실행했는지 상태를 가진 객체다.</li>
 </ul>
 
-<div class="spacer">• • •</div>
+<h2 id="php">3. 예제 - PHP</h2>
 
-<p>정리가 너무 안된다. PHP, Ruby 코드는 썼다가 전부 지웠다.</p>
+<p>실전에 사용한 예제는 AWS PHP SDK에서 찾아 볼 수 있다. AWS SDK에서 이터레이션은 거의 대부분 제너레이터를 사용하는 것을 볼 수 있다.</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// https://github.com/aws/aws-sdk-php/blob/master/src/functions.php#L49
+</span>
+<span class="k">namespace</span> <span class="nx">Aws</span><span class="p">;</span>
+
+<span class="sd">/**
+ * Applies a map function $f to each value in a collection.
+ *
+ * @param mixed    $iterable Iterable sequence of data.
+ * @param callable $f        Map function to apply.
+ *
+ * @return \Generator
+ */</span>
+<span class="k">function</span> <span class="nf">map</span><span class="p">(</span><span class="nv">$iterable</span><span class="p">,</span> <span class="nx">callable</span> <span class="nv">$f</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$iterable</span> <span class="k">as</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">yield</span> <span class="nv">$f</span><span class="p">(</span><span class="nv">$value</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>이렇게 사용할 수 있다.</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$generator</span> <span class="o">=</span> <span class="nx">Aws\map</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">),</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$value</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$generator</span> <span class="k">as</span> <span class="nv">$number</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$number</span><span class="p">,</span> <span class="nx">PHP_EOL</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>이 예제에서는 큰 차이를 못 느낄 수 있지만, 배열 요소 하나가 큰 데이터를 가지고 있을 때는 제너레이터를 쓰지 않고는 <code class="highlighter-rouge">php.ini</code> 설정에서 <code class="highlighter-rouge">memory_limit</code> 값을 엄청 늘려야 할 것이다. 배열 순회에 필요한 모든 데이터를 메모리에 적재한 후 실행하는 것과, 이번 순회에 필요한 데이터만 읽어오는 차이가 있다.</p>
 
       </div>
 
