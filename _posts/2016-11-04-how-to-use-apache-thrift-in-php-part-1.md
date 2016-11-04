@@ -385,7 +385,7 @@ Apache Thrift 라이브러리와 5절에서 생성한 보일러플레이트 코�
 
 IDL에서 정의한 대로 `id`, `title`, `content`, `created_at`, `updated_at` 컬럼을 정의하자.
 
-```sh
+```php
 <?php
 // database/migrations/YYYY_MM_DD_hhiiss_create_posts_table.php
 
