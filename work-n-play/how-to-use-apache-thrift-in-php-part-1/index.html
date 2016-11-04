@@ -6,34 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="“개척자-새로운 시장에서 어떤 물건을 처음으로 상품화한 회사” 는 “시장지배자” 라는 등식은 성립하지 않는다. 그러나, 많은 마케팅 교과서와 경영자나 기업가들은 처음 시장에 진입해야 한다는 생각에 집착한다. 평균적으로 개척자의 64%는 실패한다. 개척자들의 평균 시장 점유율은 겨우..."/>
+  <meta name="description" content="RPC는 REST와 함께 원격 API를 호출하는 두 가지 대표적인 방법 중 하나다. REST가 API를 원격 서버에 있는 리소스(모델 또는 데이터)에 대한 상태 교환이라고 생각하는 반면, RPC는 원격 서버의 함수를 호출한다고 생각한다. 그래서 REST에서는 /posts/{id}와..."/>
   <meta name="google-site-verification" content="ToXKBimREnz49pDNot4b-N9ZJgYcKXPPsHsjhg4Zzuc" />
   <meta name="naver-site-verification" content="7cebcc8e5493169f5401870d9ce57f48d18491cd"/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="마켓 리더의 조건"/>
+  <meta property="og:title" content="RPC - Apache Thrift 입문 1부"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="마켓 리더의 조건">
-  <meta itemprop="description" content="“개척자-새로운 시장에서 어떤 물건을 처음으로 상품화한 회사” 는 “시장지배자” 라는 등식은 성립하지 않는다. 그러나, 많은 마케팅 교과서와 경영자나 기업가들은 처음 시장에 진입해야 한다는 생각에 집착한다. 평균적으로 개척자의 64%는 실패한다. 개척자들의 평균 시장 점유율은 겨우...">
+  <meta itemprop="name" content="RPC - Apache Thrift 입문 1부">
+  <meta itemprop="description" content="RPC는 REST와 함께 원격 API를 호출하는 두 가지 대표적인 방법 중 하나다. REST가 API를 원격 서버에 있는 리소스(모델 또는 데이터)에 대한 상태 교환이라고 생각하는 반면, RPC는 원격 서버의 함수를 호출한다고 생각한다. 그래서 REST에서는 /posts/{id}와...">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@appkrs" />
-  <meta name="twitter:title" content="마켓 리더의 조건" />
-  <meta name="twitter:description" content="“개척자-새로운 시장에서 어떤 물건을 처음으로 상품화한 회사” 는 “시장지배자” 라는 등식은 성립하지 않는다. 그러나, 많은 마케팅 교과서와 경영자나 기업가들은 처음 시장에 진입해야 한다는 생각에 집착한다. 평균적으로 개척자의 64%는 실패한다. 개척자들의 평균 시장 점유율은 겨우..." />
+  <meta name="twitter:title" content="RPC - Apache Thrift 입문 1부" />
+  <meta name="twitter:description" content="RPC는 REST와 함께 원격 API를 호출하는 두 가지 대표적인 방법 중 하나다. REST가 API를 원격 서버에 있는 리소스(모델 또는 데이터)에 대한 상태 교환이라고 생각하는 반면, RPC는 원격 서버의 함수를 호출한다고 생각한다. 그래서 REST에서는 /posts/{id}와..." />
   <meta name="twitter:image" content="" />
   <meta name="twitter:domain" content="blog.appkr.kr">
 
   <!-- Mobile and Rss -->
-  <link rel="canonical" href="http://blog.appkr.kr/learn-n-think/to-be-a-market-leader/"/>
+  <link rel="canonical" href="http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-1/"/>
   <link rel="alternate" type="application/rss+xml" title="Appkr.memo(new Life)" href="http://blog.appkr.kr/feed.xml"/>
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/styles/main.min.css"/>
 
-  <title>마켓 리더의 조건 | Appkr.memo(new Life)</title>
+  <title>RPC - Apache Thrift 입문 1부 | Appkr.memo(new Life)</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -78,28 +78,29 @@
 
 
   <div class="container">
-  <section id="main" class="col-md-9">
+  <section id="main" class="col-md-9 minimal">
     <article class="box">
       <div class="box-header">
         <h2>
-          <span class="title">마켓 리더의 조건</span>
+          <span class="title">RPC - Apache Thrift 입문 1부</span>
           <span class="action dropdown pull-right">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
               <i class="material-icons">share</i>
             </a>
+
             <ul class="dropdown-menu">
               <li>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.appkr.kr/learn-n-think/to-be-a-market-leader/&title=마켓 리더의 조건" id="sns-facebook">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-1/&title=RPC - Apache Thrift 입문 1부" id="sns-facebook">
                   Facebook
                 </a>
               </li>
               <li>
-                <a href="http://twitter.com/share?url=http://blog.appkr.kr/learn-n-think/to-be-a-market-leader/&title=마켓 리더의 조건&text=마켓 리더의 조건" id="sns-twitter">
+                <a href="http://twitter.com/share?url=http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-1/&title=RPC - Apache Thrift 입문 1부&text=RPC - Apache Thrift 입문 1부" id="sns-twitter">
                   Twitter
                 </a>
               </li>
               <li>
-                <a href="https://plus.google.com/share?url=http://blog.appkr.kr/learn-n-think/to-be-a-market-leader/" id="sns-google">
+                <a href="https://plus.google.com/share?url=http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-1/" id="sns-google">
                   Google+
                 </a>
               </li>
@@ -110,7 +111,7 @@
         <p class="box-meta">
           <span>
             <i class="material-icons">today</i>
-            2010-02-13
+            2016-11-04
           </span>
           <span>
             <i class="material-icons">face</i>
@@ -119,9 +120,9 @@
           <span>
             <i class="material-icons">turned_in</i>
             
-              <a href="/categories#learn-n-think">
+              <a href="/categories#work-n-play">
                 
-                    Learn & Think
+                    Work & Play
                   
               </a>
               
@@ -129,135 +130,306 @@
           </span>
           <span>
             <i class="material-icons">forum</i>
-            <a href="/learn-n-think/to-be-a-market-leader/#disqus_thread" title="comments">0</a>
+            <a href="/work-n-play/how-to-use-apache-thrift-in-php-part-1/#disqus_thread" title="comments">0</a>
           </span>
         </p>
       </div>
 
       <div class="box-body">
-        <p><img src="http://image.kyobobook.co.kr/images/book/xlarge/316/x9788981442316.jpg" alt="마켓 리더의 조건" /></p>
+        <p>RPC는 REST와 함께 원격 API를 호출하는 두 가지 대표적인 방법 중 하나다. REST가 API를 원격 서버에 있는 리소스(모델 또는 데이터)에 대한 상태 교환이라고 생각하는 반면, RPC는 원격 서버의 함수를 호출한다고 생각한다. 그래서 REST에서는 <code class="highlighter-rouge">/posts/{id}</code>와 같이 원격 서버에 리소스에 접근할 수 있는 통로를 제공하고 클라이언트가 <code class="highlighter-rouge">GET /posts/{id}</code>처럼 API 엔드포인트를 통해 원격 서버의 리소스에 접근하는 반면, RPC에서는 API 엔드포인트는 가령 <code class="highlighter-rouge">POST /posts</code>처럼 하나로 고정해 놓고, 원격 서버와 클라이언트가 공통으로 사용하는 라아브러리를 시용해서 <code class="highlighter-rouge">$client-&gt;find($id)</code>와 같이 통신한다.</p>
 
-<p>“<code class="highlighter-rouge">개척자</code>-새로운 시장에서 어떤 물건을 처음으로 상품화한 회사” 는 “시장지배자” 라는 등식은 성립하지 않는다. 그러나, 많은 마케팅 교과서와 경영자나 기업가들은 처음 시장에 진입해야 한다는 생각에 집착한다. 평균적으로 개척자의 64%는 실패한다. 개척자들의 평균 시장 점유율은 겨우 6% 였다. 현재의 시장지배자들은 대부분 개척자가 아니다. 왜냐하면, 후발주자는 비용을 거의 들이지 않거나 조금만 들이고서 소비자의 취향과 시장의 잠재적인 규모, 상품개발 기술 그리고 디자인 제조기술을 배울 수 있기 때문이다.</p>
+<p>이 포스트에서는 PHP 프로젝트에서 Apache Thrift RPC 시스템을 사용하는 방법을 설명한다.</p>
 
-<p>가령, <a href="http://en.wikipedia.org/wiki/Pampers">P&amp;G의 Pampers</a> 는 일회용 종이기저귀시장 지배자이다. 그러나, 개척자인 J&amp;J 의 Chuks 를 기억하는 사람은 없다. Microsoft 의 MS-DOS 를 기억하지만, <a href="http://en.wikipedia.org/wiki/CP/M">Digital Research의 CP/M</a> 을 기억하는 사람은 몇 되지 않는다.</p>
-
-<blockquote>
-  <p>개척자 ≠ 시장 지배자(마켓 리더)</p>
-</blockquote>
-
-<p>그럼 어떻게 하면 시장 지배자가 될 수 있는가? 지속적인 마켓리더 (시장 지배자) 들은 근본적으로 대량 소비시장에 대해서 특별한 비전을 갖고 있다. 그런데, 비전에는 그것을 실현시킬 의지가 동반되어야 한다. 의지의 네 가지 주요 구성 요소는 끈기, 부단한 혁신, 금융헌신, 그리고 자산 레버리지 이다.</p>
+<p><strong><code class="highlighter-rouge">CAVEAT</code></strong> 게시판 서비스를 만드는데 RPC를 절대 쓰지 말자! 속도나 강건함을 얻는 대신 디버깅의 편리함을 포기해야 한다. 특히 Thrift는 문서가 부실하므로 검색과 삽질에 익숙하지 않다면 말리고 싶다.</p>
 
 <!--more-->
+<div class="spacer">• • •</div>
 
-<h2 id="section"><strong>비전</strong></h2>
+<h2 id="section">1. 왜?</h2>
 
-<p>개척자이건 후발 시장 진입자이건 시장에 진입할 때, 자신의 비전을 정의할 수 있는 기업들은 자원을 모을 기회를 갖고 사람들에게 사업에 대한 영감을 심어 줄 수 있다.</p>
+<p>웹 API는 클라이언트와 서버가 통신하기 위한 방법 또는 규격이다. 클라이언트가 HTTP 프로토콜을 통해 직렬화된 데이터를 보내면 서버가 받은 데이터를 역직렬화해서 클라이언트의 요청을 이해한다. 송신자의 요청을 처리하기 위헤 데이터베이스에 접근하고, 데이터를 가공/처리해서 JSON/XML 형태로 직렬화해서 다시 HTTP 프로토콜로 응답한다. 모든 과정을 순조롭다. 그런데 우리가 개발하는 API는 구글, 페이스북, 깃허브등이 하는 오픈 API가 아니라, 자체 서비스를 위한 내부 API라는 점이다.</p>
 
-<p>가령, MacDonald’s 의 Ray Kroc 은 값이 싼 패스트푸드의 대량 소비시장으로 미국 전역과 전세계를 겨냥하겠다는 비전을 갖고 있었다. 그리고 Microsoft 의 Bill Gates 는 모든 가정과 책상에 값싼 퍼스널 컴퓨터를 보급하겠다는 대량 소비시장을 계획했다.</p>
-
-<h2 id="small-------small-"><small>이렇게 진입한 시장에서 비전을 계속 유지할 수 있을까?</small> <strong>끈기</strong></h2>
-
-<p>시장 지배자는 기술적인 장벽, 법적 제재, 소비자의 잘못된 인식, 경쟁에 대한 위협 등의 도전들을 극복하면서 비전을 추구하고 유지하는 회사들이다.</p>
-
-<h2 id="small--------small-"><small>비전 실현과 사업 운영을 위해 투자할 자산을 가지고 있는가?</small> <strong>헌신</strong></h2>
-
-<p>시장 지배자들은 대량 소비 시장이 있었기 때문에 저가의 실현이 가능했던 것이 아니라, 끈질긴 기술개발을 통해 저가와 품질을 실현했기 때문에 대량 소비 시장의 비전을 실현할 수 있었다.</p>
-
-<h2 id="small--------small---"><small>현재 입지를 희생시켜야 할 지라도 변화를 꾀할 수 있는가?</small> <strong>부단한 기술 혁신</strong></h2>
-
-<p>시장, 소비자, 경쟁자와 기술은 계속해서 변한다. 이런 환경에서 정체는 시장 잠식이나 실패로 이어진다. 시장 지배력은 잠식당할 위험과 자신의 제품에 장애물이 된다고 생각될 위험이 있을 때조차 끊임없이 혁신하는 기업의 몫이다.</p>
-
-<h2 id="small------small--"><small>신규 시장으로 자신의 장점을 전환할 수 있을까?</small> <strong>자산 레버리지</strong></h2>
-
-<p>한 제품 부문에서의 리더는 유명한 브랜드와 광범위한 유통 그리고 독특한 경험으로 시장에서 우위를 차지한다. 시장 지배자는 이런 장점들을 키우고 그것들을 신중하게 확대해서 신규 시장을 지배하도록 하는 회사들이다.</p>
-
-<p>저자들은</p>
+<p>HTTP + JSON/XML은 검증된 공식이다. 자바냐, 파이썬이냐 등등 플랫폼 의존성도 신경쓸 필요없는 만국 공용어 같은 녀석이다. 그러나, 데이터 타입/구조에 대한 정의가 없다. 클라이언트와 서버 모두가 이해할 수 있는 문서를 작성해야 하고, 양쪽 코드를 모두 관리해야 한다. 게다가 JSON/XML 메시지를 해석하는 비용도 꽤 비싸다. RPC에서도 JSON 메시지를 쓸 수도 있지만, 바이너리 메시지를 더 선호한다. 이유는</p>
 
 <ul>
-  <li><a href="http://en.wikipedia.org/wiki/McDonald%27s">MacDonald’s</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Microsoft">Microsoft</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Hewlett-Packard">Hewlett-Packard</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Xerox">Xerox</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Kodak">Eastman Kodak</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Apple_computer">Apple</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Gillette_%28brand%29">Gillette</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Tim_Berners_Lee">Tim Berners-Lee’s WorldWideWeb</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Fedex">Fedex</a></li>
+  <li>서버나 클라이언트의 메모리 공간을 절약할 수 있다.</li>
+  <li>전송 속도가 빠르다.</li>
+  <li>서버측에서는 바이너리 직렬화를 위해 CPU 타임이 더 필요하지만, 클라이언트 측에서는 JSON 역직렬화에 비해 월등한 성능을 보인다.</li>
+  <li>호환성이 깨지지 않는다. 예전 데이터 포맷으로 새 서버에 요청해도 작동한다. 새 클라이언트로 예전 서버에 요청하는 경우에도 작동한다.</li>
 </ul>
 
-<p>등 다양한 기업들의 예를 들면서, 자신의 주장을 백업한다.</p>
+<p>물론 새로운 것을 배워야 하고 메시지 패킷을 직접 정의해야 하는 번거로움이 있다. 익숙해지기 전까지는, 이 과정에서 에러와의 사투를 벌여야한다.</p>
 
-<h2 id="section-1">대량소비시장을 지향하는 것은 시장 진입자에게 다음과 같은 세 가지 중요한 이득을 줄 수 있다.</h2>
+<h2 id="rpc-">2. 다른 RPC 프레임워크</h2>
 
-<ol>
-  <li>대량 소비시장에 도달하기 위해서는 그 시장이 원하는 가격을 목표로 삼아야 한다.</li>
-  <li>일단 대량 소비시장의 문이 열리면, 원가를 낮출 수 있는 규모의 경제가 가능하다.</li>
-  <li>대량 소비시장을 겨냥한 대규모 운영방식은 연구에 많은 노력을 쏟아 붓는 일을 쉽게 지원할 수 있다.</li>
-</ol>
-
-<h2 id="section-2">비전은 새로운 시장과 오래된 시장 모두에 똑같이 적용되는가?</h2>
-
-<p>시장의 나이는 비전과 관계 없다. 시장의 발전은 전적으로 기술력과 소비자의 기호에 달려있다. 확실한 비전은 앞으로 몇 년 뒤에 어디에 시장이 생길 것인지, 소비자의 욕구가 어떻게 나타날지, 그리고 시장 발전을 활용하려면 회사는 어떤 입장을 택해야 하는 지를 산출해낸다. 또한 비전은 적절한 기술을 선택하고 발전시켜 소비자의 기호에 맞는 제품을 생산함으로써 회사가 시장 발전을 주도할 수 있는 조건을 제시해 준다.</p>
-
-<h2 id="section-3">비전은 개인에게 존재하는가 아니면 회사에 존재하는가?</h2>
-
-<p>저자들의 조사에 의하면 대부분의 비전은 개인에게 나타난다. 비전의 특성상 다수가 가질 수 있는 관점이 아니다. 회사는 다수의 사람들이 사회적으로 상호작용할 것을 요구한다. 그리고 회사는 구조적으로 개성을 억누르고 집단적인 사고를 부추긴다. 그래서 비전을 가진 사람이 회사에서 성장하고 성공하기란 매우 힘들다.</p>
-
-<p>이런 이유로, 한 회사의 지속적인 성공은 비전을 가진 개인이 리더쉽을 발휘하게 해 주고 그것을 지원해주고 지켜줄 만한 능력의 유무에 달려 있었다. 비전을 가진 회사 설립자가 자기 회사에서 계속 지도력을 지키고 있는 한 아무런 문제가 없다. 그러나 회사가 상속되면 그 조직은 리더와 함께 그의 비전까지도 잃을 위험이 있다.</p>
-
-<h2 id="section-4">관료주의의 폐해</h2>
-
-<p>Xerox 의 <a href="http://en.wikipedia.org/wiki/PARC_%28company%29">PARC(Palo Alto Research Center)</a> 는 컴퓨터의 개념과 컴퓨터가 사람을 위해서 할 수 있는 일에 대한 생각을 바꿀 만한 급진적인 기술 혁신들을 많이 개발했다. 그러나, 당시 Xerox 의 관리자들은 미래 사무실의 모습이 어떻게 될 지 또는 어떤 변화가 예상되는 지에 대한 생각이 없었다.</p>
+<p>Apache Thrift 외에도 선택지가 꽤 있다.</p>
 
 <ul>
-  <li>데크스크탑 레이저 프린터와 레이저 복사기의 선조인 레이저 컴퓨터 프린터가 1971년 생산되었다. 이것은 IBM 이 자체적으로 레이저 프린터를 도입하기 4 년 전의 일이었다. 레이저 프린트 자체는 주요 제품부문이 되었으며 아직까지도 종이복사와 관계가 있다.</li>
-  <li>자바(JAVA) 의 선조 격인 객체 지향적 프로그래밍 언어인 <a href="http://en.wikipedia.org/wiki/Smalltalk">스몰 토크(Smalltalk)</a> 는 1971년 개발되었다.</li>
-  <li>초창기 퍼스널 컴퓨터인 <a href="http://en.wikipedia.org/wiki/Xerox_Alto">알토(Alto)</a> 는 1973년 생산되었다. 이 날짜는 MITS 가 <a href="http://en.wikipedia.org/wiki/Altair_8800">알테어(Altair)</a> 를 상업화해서 퍼스널 컴퓨터의 대량소비 신규 제품부문을 도입하기 2년 전 일이다.</li>
-  <li>창이 여러 개로 겹치고, 팝업 메뉴와 데스크탑 모니터 위에 그래픽을 쓸 수 있는 비트맵 그래픽은 1974 년 개발되었다. 이 날짜는 Apple 이 <a href="http://en.wikipedia.org/wiki/Apple_Lisa">리사(Lisa)</a> 에 이런 기능들을 포함시키기 8 년 전이며, 마이크로소프트가 첫 번째 윈도우 운영시스템을 개발하기 시작하기 11 년 전이다.</li>
-  <li>퍼스널 컴퓨터 네트워크 시스템인 이더넷(Ethernet)은 1971 년 개발되었으며, 1975 년까지 컴퓨터가 프린터의 네트워크를 지원해 주기 위해서 사용되었다. 1990 년대 컴퓨터가 급속도로 연결되면서 네트워크 자체가 또 다른 주요 부분이 되었다.</li>
-  <li>트루폰트 (화면으로 보고 있는 것을 그대로 표시할 수 있는 것) 를 가진 그래픽 워드프로세서 프로그램인 <a href="http://en.wikipedia.org/wiki/Gypsy_%28software%29">집시(Gypsy)</a> 는 1975 년 준비가 되어 있었다. 사용자가 키보드를 갖고 스크린 상에 있는 문서 전체를 작성할 수 있었으며, 마우스를 갖고 움직일 수 있고, 편집하고, 잘라내고, 필요할 때마다 붙여 넣고, 레이저 프린터로 인쇄해 낼 수 있었다. 마이크로소프트의 워드보다 10 년 정도를 앞선 이런 소프트웨어는 궁극적으로 타자기와 워드프로세서 전용기를 대신하였다.</li>
-  <li>서류가방 크기의 휴대용 컴퓨터인 노트테이크 (Notetake) 는 1978 년 준비되었다. 그것은 <a href="http://en.wikipedia.org/wiki/Osborne_I">오스본 I (Osborne I)</a> 이 시장에 출시되기 3 년 전의 일이었다.</li>
+  <li>프로토콜 버퍼(Protocol Buffers)
+    <ul>
+      <li>구글이 개발</li>
+      <li>2008년에 BSD 라이선스로 오픈 소스</li>
+      <li>구글 프로덕션에서 사용. 우리가 검색 요청을 할 때마다 프로토콜 버퍼가 작동함</li>
+      <li>공식적으로 C++/Java/Python/Javascript만 지원하지만, 커뮤니티에서 제공하는 다른 언어용 프로젝트도 있음</li>
+      <li>문서가 훌륭하고, 커뮤니티 활동도 활발함</li>
+      <li>구글, ActiveMQ, Netty 등에서 사용</li>
+    </ul>
+  </li>
+  <li>Apache Thrift
+    <ul>
+      <li>x-Googler가 페이스북에 입사하여 많듬</li>
+      <li>2007년에 Apache License로 오픈 소스</li>
+      <li>현존하는 RPC 스택 중 가장 많은 언어 공식 지원</li>
+      <li>RPC 콜을 위한 풀 스택을 지원하므로 트랜스포트를 직접 쓸 필요가 없다. 심지어 클라이언트/서버 코드도 생성해 준다</li>
+      <li>문서는 부실하고, 버전업 속도가 상대적으로 느린 편</li>
+      <li>페이스북, 에버노트, LastFM 등에서 사용</li>
+    </ul>
+  </li>
+  <li>기타
+    <ul>
+      <li>Apache AVRO, GRPC 외</li>
+    </ul>
+  </li>
 </ul>
 
-<p>Xerox 는 이런 자산들을 효과적으로 레버리지하지 않았다. PARC 자체는 성공적이었지만, 모기업은 그곳의 작품에 대해서 거의 이해하지 못했고 그것의 상업적인 가치도 알지 못한 채 PARC 의 기술 혁신 대부분을 반대하거나 지연시켰다.</p>
+<h2 id="section-1">3. 워크플로우</h2>
 
-<p>이는</p>
+<p>REST든 RPC든 마찬가지다. 모범 사례는 서버와 클라이언트간의 약속을 가장 먼저 정하는 일이다.</p>
 
 <ul>
-  <li>신규 부문이 이전 부문을 위협할 수 있는 정도로 확대될 수 있다는 것에 대한 불안</li>
-  <li>비용에 대한 강박 관념과 편협한 생각</li>
-  <li>과거의 성공이나 현재 제품의 성공에 대한 집착에서 오는 근시안적인 견해</li>
+  <li>메시지 형식 및 서비스 인터페이스 작성. RPC 프레임워크들은 인터페이스를 정의하기 위해 스스로 정의한 IDL(Interface Definition Language)를 제공한다.</li>
+  <li>프레임워크에서 제공하는 툴(컴파일러)를 이용해서 여러 언어용으로 보일러플레이트 코드 생성</li>
+  <li>생성된 보일러플레이트 코드를 애플리케이션으로 끌어 와서 기능 개발</li>
 </ul>
 
-<p>때문이다. </p>
+<p>이 워크플로우대로 차근차근 PHP 언어에서 Apache Thrift를 이용한 프로젝트를 만드는 법을 설명한다.</p>
 
-<h2 id="section-5">시장 지배력보다 수익에 초점을 맞춘다면 결론은 변할 것인가?</h2>
+<h2 id="section-2">4. 인터페이스 작성</h2>
 
-<p>사업전략의 중요한 원리는 단기수익보다는 리더쉽(비전)을 유지하는 것에 맞춰 있다. 단기수익에 대한 초점은 쇠퇴하는 시장에 대한 방지책으로 더 적절할 것 같으며 급성장하는 시장에는 적절하지 않다.</p>
+<p>IDL 문법은 공식 문서에는 없다. <a href="https://diwakergupta.github.io/thrift-missing-guide/">https://diwakergupta.github.io/thrift-missing-guide/</a>에 자세히 나와 있다. 전체 문법 중 일부만 사용하지만, 코드를 보면서 이해하는 것이 쉽울 것이다.</p>
 
-<p><strong><code class="highlighter-rouge">주)</code></strong></p>
+<pre><code class="language-thrift">// https://github.com/appkr/thrift-example-idl/blob/master/src/Post.thrift
 
-<p>저자는 B2C 대량 소비 시장 위주로 논리를 전개해 나가며, B2B 나 틈새시장은 언급하지 않는다. 대량 소비 시장에 대한 원대한 비전을 가진 벤처나 중소기업도 있지만, 수익성과 생존을 비전으로 하는 기업들도 많다. 대기업들이 손대지 않는 작은 시장에서, 경쟁에 휘둘리지 않고, 조직 구성원 모두가 먹고 살 만큼만 수익을 내서 “다 같이 잘 살자”라는 “공생”을 목표로 하는 기업들 말이다.</p>
+include "Errors.thrift"                 // Errors.thrfit 파일을 임포트 한다.
 
-<p>저자가 말한 대량 소비시장이건 틈새시장이건 비전의 크기의 차이만 있을 뿐, 구성원들을 이끌어 갈 수 있는 구심점(비전, 목표)은 반드시 필요하며, 끈기, 헌신, 기술혁신, 자산레버리지는 비전이나 목표를 달성하는 수단이 됨은 기업 경영의 진리이다.</p>
+namespace php Appkr.Thrift.Post         // PHP용 네임스페이스를 정의한다.
+namespace java kr.appkr.thrift.post     // 다른 언어도 정의할 수 있다는 것을 보여 주기 위해서
+                                        // 쓰지는 않지만, 자바 패키지를 정의했다.
+
+/**
+ * Post 엔티티
+ */
+struct Post {                           // Post 메시지 타입을 정의한다. 
+                                        // 모델이라 볼 수도 있고, 필요한 데이터만 간추린 DTO라 볼 수도 있다.
+    /** 기본 키 */
+    1: optional i32 id,                 // 번호는 클라인트-서버간 통신 및 버전간 호환성 유지를 위해 꼭 필요하다.
+                                        // 꼭 필요한 필드라면 required, 그렇지 않다면 optional 키워드를 쓴다.
+
+    /** 포스트 제목 */
+    2: optional string title,
+
+    /** 포스트 본문 */
+    3: optional string content,
+
+    /** 포스트 최초 생성 시각 */
+    4: optional string created_at,
+
+    /** 포스트 최종 수정 시각 */
+    5: optional string updated_at
+}
+
+/**
+ * Post 엔티티의 필드들
+ */
+enum PostField {                        // enum 필드는 PHP에서 클래스 상수로 변환된다.
+    /** 제목 필드 */
+    TITLE = 1,                          // 메시지 정의할 때는 콜론(:), enum에서는 등호(=)를 사용한다.
+                                        // enum의 값으로 연속된 정수를 쓸 필요는 없다.
+    /** 본문 필드 */
+    CONTENT = 2,
+
+    /** 최초 생성 시각 */
+    CREATED_AT = 3,
+
+    /** 최종 수정 시각 */
+    UPDATED_AT = 4,
+}
+
+/**
+ * 정렬 방향
+ */
+enum SortDirection {
+    /** 오름 차순 */
+    ASC = 1,
+
+    /** 내림 차순 */
+    DESC = 2,
+}
+
+/**
+ * PostCollection 엔티티
+ */
+typedef list&lt;Post&gt; PostCollection       // Thrift 기본 타입 외 커스텀 타입을 정의할 수 있다.
+
+/**
+ * 쿼리 필터 엔티티
+ */
+struct QueryFilter {
+    /** 검색할 키워드 */
+    1: optional string keyword = '',
+
+    /** 정렬 기준이 되는 필드 */
+    2: optional PostField sortBy = PostField.CREATED_AT,
+
+    /** 정렬 방향 */
+    3: optional SortDirection sortDirection = SortDirection.DESC
+}
+
+/**
+ * Post 서비스
+ */
+service PostService {                   // 서비스를 정의한다.
+                                        // 여기서 앞서 정의한 메시지와 enum을 사용한다.
+    /**
+     * 포스트 목록을 응답합니다.
+     */
+    PostCollection all(
+        1: QueryFilter qf,              // 객체형 메서드 인자
+        2: i32 offset = 0,
+        3: i32 limit = 10
+    ) throws (
+        1: Errors.UserException userException,
+                                        // 임포트한 다른 네임스페이스의 메시지 타입을 참조할 때 점(.)을 이용한다.
+        2: Errors.SystemException systemException
+                                        // 예외를 담을 변수 이름을 서로 다르게 사용해야 한다. 
+    ),
+
+    /**
+     * 특정 포스트의 상세 정보를 응답합니다.
+     */
+    Post find(
+        1: i32 id
+    ) throws (
+        1: Errors.UserException userException
+        2: Errors.SystemException systemException
+    ),
+
+    /**
+     * 새 포스트를 만듭니다.
+     */
+    Post store(
+        1: string title,
+        2: string content
+    ) throws (
+        1: Errors.UserException userException
+        2: Errors.SystemException systemException
+    )
+}
+</code></pre>
+
+<p><code class="highlighter-rouge">Post.thrift</code>에서 참조한 <code class="highlighter-rouge">Errors.thrift</code>는 <a href="https://github.com/appkr/thrift-example-idl/blob/master/src/Errors.thrift">예제 프로젝트</a>에서 찾을 수 있다.</p>
+
+<p>지금 IDL 프로젝트의 파일 목록은 다음과 같다.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>~/thrift-example-idl/src
+                    ├── Errors.thrift
+                    └── Post.thrift
+</code></pre>
+</div>
+
+<h2 id="section-3">5. 컴파일해서 보일러 플레이트 코드 생성</h2>
+
+<p>IDL 작성이 끝나면 컴파일러 바이너리로 보일러 플레이트 코드를 생성한다. OS X 컴퓨터에서는 홈브루로 설치할 수 있는데, 이 포스트를 작성 시점의 <code class="highlighter-rouge">thrift</code> 바이너리는 PHP의 PSR4를 지원하지 않는 0.9.3 버전이다. 따라서 Thrift 프로젝트의 <code class="highlighter-rouge">dev-master 1.0.0-candidate</code> 소스를 받아서 컴파일해야하는데 맥에서는 여간 어려운 일이 아니다.</p>
+
+<p>따라서 <a href="/files/thrift-osx.gz">맥에서 미리 컴파일해놓은 파일을 여기서 다운로드</a> 받아 사용할 것을 권장한다. 다운로드 받은 파일 압축을 풀고 <code class="highlighter-rouge">/usr/local/bin</code> 디렉터리로 옮기고 실행 권한을 설정해 준다.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>mv thrift /usr/local/bin/
+~ <span class="nv">$ </span>chmod 755 /usr/local/bin/thrift
+~ <span class="nv">$ </span>thrift --version
+<span class="c"># Thrift version 1.0.0-dev</span>
+</code></pre>
+</div>
+
+<p>이제 컴파일해 보자. 아무런 에러 피드백 없이 명령이 끝났다면 성공한 것이다.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>~/thrift-example-idl <span class="nv">$ </span>thrift -r --gen php:server,psr4 src/Post.thrift
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">-r</code>은 인클루드(임포트)한 파일까지도 컴파일한다는 의미고, <code class="highlighter-rouge">--gen</code>은 <code class="highlighter-rouge">language:key1[=val1]</code> 형식으로 쓴다. 가령 자바 코드로 컴파일한다면 <code class="highlighter-rouge">--gen java</code>처럼 쓰면 된다. 컴파일된 결과를 확인해 보자.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>~/thrift-example-idl
+├── gen-php
+│   └── Appkr
+│       └── Thrift
+│           ├── Errors
+│           │   ├── ErrorCode.php
+│           │   ├── SystemException.php
+│           │   └── UserException.php
+│           └── Post
+│               ├── Post.php
+│               ├── PostField.php
+│               ├── PostServiceClient.php
+│               ├── PostServiceIf.php
+│               ├── PostServiceProcessor.php
+│               ├── PostService_all_args.php
+│               ├── PostService_all_result.php
+│               ├── PostService_find_args.php
+│               ├── PostService_find_result.php
+│               ├── PostService_store_args.php
+│               ├── PostService_store_result.php
+│               ├── QueryFilter.php
+│               └── SortDirection.php
+└── src
+</code></pre>
+</div>
+
+<p>예제 프로젝트에서는 컴파일하고 디렉터리 이름을 바꾸는 등의 모든 작업을 <code class="highlighter-rouge">Makefile</code>로 작성해 두었다. 자바 컴파일도 포함하고 있다. 해서 다음 명령으로 간단히 작업을 수행할 수 있다.</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>~/thrift-example-idl <span class="nv">$ </span>make clean
+<span class="c"># rm -rf lang/java/build lang/java/post-thrift.jar</span>
+<span class="c"># rm -rf gen-* dist-* docs</span>
+~/thrift-example-idl <span class="nv">$ </span>make
+<span class="c"># rm -rf lang/java/build lang/java/post-thrift.jar</span>
+<span class="c"># rm -rf gen-* dist-* docs</span>
+<span class="c"># thrift -r --gen php:server,psr4 src/Post.thrift</span>
+<span class="c"># thrift -r --gen java src/Post.thrift</span>
+<span class="c"># ...</span>
+<span class="c"># mkdir -p docs</span>
+<span class="c"># thrift -r --gen html:standalone -out docs src/Post.thrift</span>
+<span class="c"># mv gen-php dist-php</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">Makefile</code>에서는 IDL 문서도 HTML로 생성해 주는데 아래 그림처럼 생겼다.</p>
+
+<p><a href="/images/2016-11-04-img-01.png"><img src="/images/2016-11-04-img-01.png" alt="방송하기" /></a></p>
+
+<h2 id="x-">x. 결론</h2>
+
+<ul>
+  <li>클라이언트는 편하다.</li>
+  <li>클라이언트가 문서를 읽고 데이터 형식에 맞추거나, 서버가 데이터 형식에 대한 유효성을 검사하는데 신경을 덜 쓸 수 있다.</li>
+</ul>
+
 
       </div>
 
       <footer class="box-tags">
         <span><i class="material-icons">label</i> Tags:</span>
         
-          <a href="/tags#기업철학">
-            기업철학
+          <a href="/tags#개발자">
+            개발자
           </a>
           , 
         
-          <a href="/tags#기획자">
-            기획자
+          <a href="/tags#rpc">
+            rpc
           </a>
           , 
         
-          <a href="/tags#전략">
-            전략
+          <a href="/tags#apache thrift">
+            apache thrift
           </a>
           
         
@@ -268,25 +440,22 @@
       <ul class="pager">
         
         <li class="previous">
-          <a href="/learn-n-think/thought-on-fabulous-planner/">
+          <a href="/learn-n-think/understanding-generator/">
             <span aria-hidden="true">
               <i class="material-icons">navigate_before</i>
             </span>
             <span class="pager-title-sm">Older</span>
             <span class="pager-title">
-              훌륭한 기획자에 대한 斷想
+              제너레이터 이해하기
             </span>
           </a>
         </li>
         
 
         
-        <li class="next">
-          <a href="/around-me/openplatform-war-and-application-market-war/">
-            <span class="pager-title">
-              OpenPlatform 전쟁, ...
-            </span>
-            <span class="pager-title-sm">Newer</span>
+        <li class="next disabled">
+          <a href="#">
+            <span>Newer</span>
             <span aria-hidden="true">
               <i class="material-icons">navigate_next</i>
             </span>
