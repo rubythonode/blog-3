@@ -524,30 +524,30 @@
 
 <p>IDL에서 정의한 대로 <code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">title</code>, <code class="highlighter-rouge">content</code>, <code class="highlighter-rouge">created_at</code>, <code class="highlighter-rouge">updated_at</code> 컬럼을 정의하자.</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>&lt;?php
-// database/migrations/YYYY_MM_DD_hhiiss_create_posts_table.php
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="c1">// database/migrations/YYYY_MM_DD_hhiiss_create_posts_table.php
+</span>
+<span class="k">use</span> <span class="nx">Illuminate\Support\Facades\Schema</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Schema\Blueprint</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Migrations\Migration</span><span class="p">;</span>
 
-use Illuminate<span class="se">\S</span>upport<span class="se">\F</span>acades<span class="se">\S</span>chema;
-use Illuminate<span class="se">\D</span>atabase<span class="se">\S</span>chema<span class="se">\B</span>lueprint;
-use Illuminate<span class="se">\D</span>atabase<span class="se">\M</span>igrations<span class="se">\M</span>igration;
+<span class="k">class</span> <span class="nc">CreatePostsTable</span> <span class="k">extends</span> <span class="nx">Migration</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">up</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nx">Schema</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nx">Blueprint</span> <span class="nv">$table</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">increments</span><span class="p">(</span><span class="s1">'id'</span><span class="p">);</span>
+            <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">string</span><span class="p">(</span><span class="s1">'title'</span><span class="p">);</span>
+            <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">(</span><span class="s1">'content'</span><span class="p">);</span>
+            <span class="nv">$table</span><span class="o">-&gt;</span><span class="na">timestamps</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
 
-class CreatePostsTable extends Migration
-<span class="o">{</span>
-    public <span class="k">function </span>up<span class="o">()</span>
-    <span class="o">{</span>
-        Schema::create<span class="o">(</span><span class="s1">'posts'</span>, <span class="k">function</span> <span class="o">(</span>Blueprint <span class="nv">$table</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nv">$table</span>-&gt;increments<span class="o">(</span><span class="s1">'id'</span><span class="o">)</span>;
-            <span class="nv">$table</span>-&gt;string<span class="o">(</span><span class="s1">'title'</span><span class="o">)</span>;
-            <span class="nv">$table</span>-&gt;text<span class="o">(</span><span class="s1">'content'</span><span class="o">)</span>;
-            <span class="nv">$table</span>-&gt;timestamps<span class="o">()</span>;
-        <span class="o">})</span>;
-    <span class="o">}</span>
-
-    public <span class="k">function </span>down<span class="o">()</span>
-    <span class="o">{</span>
-        Schema::dropIfExists<span class="o">(</span><span class="s1">'posts'</span><span class="o">)</span>;
-    <span class="o">}</span>
-<span class="o">}</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">down</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nx">Schema</span><span class="o">::</span><span class="na">dropIfExists</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 

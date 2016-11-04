@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Nov 2016 02:33:06 +0900</pubDate>
-    <lastBuildDate>Sat, 05 Nov 2016 02:33:06 +0900</lastBuildDate>
+    <pubDate>Sat, 05 Nov 2016 02:43:15 +0900</pubDate>
+    <lastBuildDate>Sat, 05 Nov 2016 02:43:15 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -399,30 +399,30 @@
 
 &lt;p&gt;IDL에서 정의한 대로 &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;created_at&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;updated_at&lt;/code&gt; 컬럼을 정의하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
-// database/migrations/YYYY_MM_DD_hhiiss_create_posts_table.php
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// database/migrations/YYYY_MM_DD_hhiiss_create_posts_table.php
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Illuminate\Support\Facades\Schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Illuminate\Database\Schema\Blueprint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Illuminate\Database\Migrations\Migration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-use Illuminate&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;upport&lt;span class=&quot;se&quot;&gt;\F&lt;/span&gt;acades&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;chema;
-use Illuminate&lt;span class=&quot;se&quot;&gt;\D&lt;/span&gt;atabase&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;chema&lt;span class=&quot;se&quot;&gt;\B&lt;/span&gt;lueprint;
-use Illuminate&lt;span class=&quot;se&quot;&gt;\D&lt;/span&gt;atabase&lt;span class=&quot;se&quot;&gt;\M&lt;/span&gt;igrations&lt;span class=&quot;se&quot;&gt;\M&lt;/span&gt;igration;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CreatePostsTable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Migration&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;up&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;Schema&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'posts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Blueprint&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;increments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'content'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;timestamps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-class CreatePostsTable extends Migration
-&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    public &lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;up&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        Schema::create&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'posts'&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Blueprint &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;-&amp;gt;increments&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
-            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;-&amp;gt;string&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
-            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;-&amp;gt;text&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'content'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
-            &lt;span class=&quot;nv&quot;&gt;$table&lt;/span&gt;-&amp;gt;timestamps&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
-        &lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    public &lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;down&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        Schema::dropIfExists&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'posts'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;down&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;Schema&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dropIfExists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'posts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
