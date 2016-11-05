@@ -151,7 +151,7 @@
 
 <p>웹 API는 클라이언트와 서버가 메시지를 주고 받기 위한 약속이다. 클라이언트가 HTTP 프로토콜을 통해 직렬화된 데이터를 보내면 서버는 받은 데이터를 역직렬화해서 클라이언트의 요청을 이해한다. 서버가 클라이언트의 요청을 처리하는 과정에서 데이터베이스에 접근하고, 데이터베이스에서 조회한 데이터를 가공해서 JSON/XML 형태로 직렬화해서 다시 HTTP 프로토콜로 응답한다. 이 모든 과정은 순조롭다. 그런데 우리가 개발하는 API는 구글, 페이스북, 깃허브등이 하는 오픈 API가 아니라, 대부분이 자체 서비스를 위한 내부 API라는 점이다.</p>
 
-<p>HTTP + JSON/XML은 검증된 공식이다. 자바냐, 파이썬이냐 등등 플랫폼 의존성도 신경 쓸 필요 없는 만국 공용어 같은 녀석이라 볼 수 있다. 그러나, JSON은 메시지 구조에 대한 정의가 없고, XML은 무겁다. 게다가 클라이언트와 서버 모두가 이해할 수 있는 API 문서를 작성해야 하고, 양쪽 코드를 모두 관리해야 한다.</p>
+<p>HTTP + JSON/XML은 검증된 공식이다. 자바냐, 파이썬이냐 등등 플랫폼 의존성도 신경 쓸 필요 없는 만국 공용어 같은 녀석이라 볼 수 있다. 그러나, <strong>JSON은 메시지 구조에 대한 정의가 없고, XML은 무겁다. 게다가 클라이언트와 서버 모두가 이해할 수 있는 API 문서를 작성해야 하고, 양쪽 코드를 모두 관리해야 한다</strong>.</p>
 
 <p>RPC 시스템에서는 JSON 뿐만 아니라, 바이너리 데이터도 주고 받을 수 있다. 특히 바이너리 데이터는 메시지 크기가 작아, 서버나 클라이언트의 메모리 공간을 절약할 뿐더러 전송 속도가 매우 빠르다. 바이너리 데이터는 JSON (역)직렬화에 비해 특히 클라이언트 측에서 월등한 성능을 보인다. 또, 앞서 지적한 메시지 구조나 파싱 비용에 대한 이슈도 없다.</p>
 
@@ -159,10 +159,10 @@
 
 <h2 id="rpc-">2. 다른 RPC 프레임워크</h2>
 
-<p>Apache Thrift 외에도 선택지가 꽤 있다.</p>
+<p>Apache Thrift 외에도 선택지는 더 있다.</p>
 
 <ul>
-  <li><a href="https://developers.google.com/protocol-buffers/">프로토콜 버퍼(Protocol Buffers)</a>
+  <li><strong><a href="https://developers.google.com/protocol-buffers/">프로토콜 버퍼(Protocol Buffers)</a></strong>
     <ul>
       <li>구글이 개발</li>
       <li>2008년에 BSD 라이선스로 오픈 소스</li>
@@ -172,7 +172,7 @@
       <li>구글, ActiveMQ, Netty 등에서 사용</li>
     </ul>
   </li>
-  <li><a href="https://thrift.apache.org/">Apache Thrift</a>
+  <li><strong><a href="https://thrift.apache.org/">Apache Thrift</a></strong>
     <ul>
       <li>x-구글러가 페이스북에 입사하여 많듦.</li>
       <li>2007년에 Apache 라이선스로 오픈 소스</li>
@@ -184,7 +184,7 @@
   </li>
   <li>기타
     <ul>
-      <li><a href="https://avro.apache.org/">Apache AVRO</a>, <a href="http://www.grpc.io/">GRPC</a> 외</li>
+      <li><strong><a href="https://avro.apache.org/">Apache AVRO</a></strong>, <strong><a href="http://www.grpc.io/">GRPC</a></strong> 외</li>
     </ul>
   </li>
 </ul>
@@ -203,9 +203,9 @@
 
 <h2 id="idl-">4. 약속(IDL) 작성</h2>
 
-<p>IDL을 설명하는 공식 문서는 많이 부실하다. 필자가 찾은 가이드 중 <a href="https://diwakergupta.github.io/thrift-missing-guide/">https://diwakergupta.github.io/thrift-missing-guide/</a>가 가장 좋았다.</p>
+<p>IDL을 설명하는 Thrift 공식 문서는 많이 부실하다. 필자가 찾은 가이드 중 <a href="https://diwakergupta.github.io/thrift-missing-guide/">https://diwakergupta.github.io/thrift-missing-guide/</a>가 가장 좋았다.</p>
 
-<p>이 예졔 프로젝트(<code class="highlighter-rouge">thrift-example-idl</code>)는 IDL 문법 중 아주 일부만 사용하지만, 영어로 된 문서를 읽으며 IDL 문법을 이해하는 것에 비해 진입장벽을 낮춰 주는 시작점이 된다고 생각한다. IDL 코드 안에 주석으로 설명을 포함했다.</p>
+<p>이 예졔 프로젝트(<code class="highlighter-rouge">thrift-example-idl</code>)는 IDL 문법 중 일부만 사용하지만, 진입장벽을 낮춰 주는 좋은 시작점이 될 것이라고 확신하다. IDL 코드 안에 주석으로 설명을 포함했다.</p>
 
 <div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="c1">// https://github.com/appkr/thrift-example-idl/blob/master/src/Post.thrift</span>
 
@@ -762,7 +762,7 @@
 
 <h4 id="section-9">6.3.4. 작동 테스트</h4>
 
-<p>PHP 프로젝트니까 PHPUnit 테스트에서 Thrift 클라이언트를 만들고 같은 프로젝트에 있는 Thrift 서버로 요청을 보내서 테스트해 볼 것이다.</p>
+<p>PHP 프로젝트니까 PHPUnit 테스트에서 Thrift 클라이언트를 만들고 같은 프로젝트에 있는 Thrift 서버로 요청을 보내서 정상 작동을 테스트해 볼 것이다.</p>
 
 <div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
 <span class="c1">// tests/ThriftClientTest.php
@@ -829,7 +829,7 @@
 </code></pre>
 </div>
 
-<p>새 콘솔 창을 열고 PHPUnit 명령으로 정상 작동을 확인한다.</p>
+<p>새 콘솔 창을 열고 PHPUnit 명령으로 서버에 요청을 보내고 정상적인 응답을 받는지 확인한다.</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code>~/thrift-example-project <span class="nv">$ </span>vendor/bin/phpunit
 <span class="c"># PHPUnit 5.6.2 by Sebastian Bergmann and contributors.</span>
@@ -852,7 +852,7 @@
 </code></pre>
 </div>
 
-<p>디버깅이 지극히 힘들다. Thrift 트랜젝션에서 <code class="highlighter-rouge">var_dump($var)</code>라도 찍으면 <code class="highlighter-rouge">Thrift\Exception\TProtocolException</code> 또는 <code class="highlighter-rouge">Thrift\Exception\TTransportException</code>이 바로 떨어진다. 웹 브라우저와 HTTP 클라이언트를 이용하는 것이 아닐 뿐더러, 껍데기만 HTTP일뿐(Tcp도 가능하다) 완전 다른 프로토콜이므로 라라벨 로그에 의존해서 디버깅 해야 한다. 그럼에도 장점은 있다.</p>
+<p>디버깅이 지극히 힘들다. Thrift 트랜젝션에서 <code class="highlighter-rouge">var_dump($var)</code>라도 찍으면 <code class="highlighter-rouge">Thrift\Exception\TProtocolException</code> 또는 <code class="highlighter-rouge">Thrift\Exception\TTransportException</code>이 바로 떨어진다. 웹 브라우저와 HTTP 클라이언트를 이용하는 것이 아닐 뿐더러, 껍데기만 HTTP일뿐(Tcp도 가능하다고 한다) 완전 다른 프로토콜이므로 라라벨 로그에 의존해서 디버깅 해야 한다. 그럼에도 장점은 있다.</p>
 
 <ul>
   <li>(봤다시피) 마치 원격 API를 로컬 라이브러리의 API처럼 호출한다. 따라서 클라이언트는 편하다.</li>
