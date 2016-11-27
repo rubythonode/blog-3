@@ -69,7 +69,7 @@ PHP는 20년이 넘는 역사를 가지고 있습니다. 현존하는 모든 컴
 
 [![PHP 성능](/images/2016-11-27-img-02.png)](/images/2016-11-27-img-02.png)
 
-이런 이유로 한 동안 PHP를 쳐다보지도 않았다면, 지금은 다시 한 번 쳐다보세요. 웹 서비스에서는 다른 언어 대비 엄청난 성능을 보이고(http://benchmarksgame.alioth.debian.org/), 비일관성이나 코딩 습관은 PSR(PHP Standard Recommendation, Like JSR)과 라라벨과 같은 프레임워크가 어느 정도 가이드해줍니다.
+이런 이유로 한 동안 PHP를 쳐다보지도 않았다면, 지금은 다시 한 번 쳐다보세요. 웹 서비스에서는 다른 언어 대비 엄청난 성능을 보이고[^4], 비일관성이나 코딩 습관은 PSR(PHP Standard Recommendation, Like JSR)과 라라벨과 같은 프레임워크가 어느 정도 가이드해줍니다.
 
 <div class="spacer">• • •</div>
 
@@ -82,3 +82,4 @@ PHP는 20년이 넘는 역사를 가지고 있습니다. 현존하는 모든 컴
 [^1]: https://github-ranking.com/repositories, 레일즈 10위, 익스프레스 31위, 장고 53위
 [^2]: http://www.tiobe.com/tiobe-index/
 [^3]: https://w3techs.com/technologies/overview/programming_language/all
+[^4]: http://benchmarksgame.alioth.debian.org/, 테이블 헤더의 spectral-norm 등은 테스트 벡터 이름, secs는 실행 시간, KB/gz는 소스코드 크기, cpu는 CPU 사용 시간, 측정 값은 모두 4회 테스트한 결과의 평균치
