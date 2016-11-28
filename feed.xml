@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Nov 2016 08:21:10 +0900</pubDate>
-    <lastBuildDate>Mon, 28 Nov 2016 08:21:10 +0900</lastBuildDate>
+    <pubDate>Mon, 28 Nov 2016 22:12:19 +0900</pubDate>
+    <lastBuildDate>Mon, 28 Nov 2016 22:12:19 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -81,16 +81,18 @@
 
 &lt;div class=&quot;spacer&quot;&gt;• • •&lt;/div&gt;
 
-&lt;p&gt;원고를 탈고하고 책이 출간되는 사이에 라라벨 버전업이 한 번 있었고, 따라서 전체 예제 코드를 새 버전에 맞게 전부 다시 짰습니다. 뿐만아니라 이 책이 세상에 태어나지 못할 수도 있는 여러 가지 위기 상황을 겪었습니다. 책을 받아 든 순간 만감이 교차했습니다(울지는 않았습니다^^).&lt;/p&gt;
+&lt;p&gt;원고를 탈고하고 책이 출간되는 사이에 라라벨 버전업이 한 번 있었고, 따라서 전체 예제 코드를 새 버전에 맞게 전부 다시 짰습니다. 뿐만아니라 이 책이 세상에 태어나지 못할 수도 있는 여러 가지 위기 상황을 겪었습니다. 그래서 책을 받아 든 순간 만감이 교차했지요.&lt;/p&gt;
 
-&lt;p&gt;저는 라라벨 국내 확산에 대한 미묘한 사명감에 책을 썼습니다. 국내 시장이 작은 이유도 있겠지만, 이번에 책을 쓰고나니, 저자들이 책을 쓸 동기가 전혀 없겠다는 생각이 들었습니다. 사실 초판이 다 팔려도 저자들이 받는 인세는 그들이 들인 시간과 에너지에 비해 정말 작거든요. 앞으로 책을 또 쓰는 무모한 짓은 하지 않으려고 다짐하는데, 옆에서 ‘한 번이 어렵지~’라며 바람을 넣네요. 후후.&lt;/p&gt;
+&lt;p&gt;저는 라라벨이 국내에 확산되고, 그로 인해 자연스럽게 국내 PHP 및 웹 개발 생태계가 발전하기를 기대하며 이 책을 썼습니다. 국내 시장이 작은 이유도 있겠지만, 이번에 책을 쓰면서 출판 생태계를 알고 보니, 저자들이 책을 쓸 동기가 전혀 없겠다는 사실을 깨달았습니다. 사실 초판이 다 팔려도 저자들이 받는 인세는 그들이 들인 시간과 에너지에 비해 정말 작거든요.&lt;/p&gt;
+
+&lt;p&gt;우리는 정보 과잉의 시대에 살고 있습니다. 새로운 기술을 배울 수 있는 채널을 너무나도 많습니다. 하지만 웹 검색을 통한 단편적인 지식 습득보다는 전체를 이해하는데는 책보다 더 좋은 채널이 없습니다. 제 자신도 책을 잘 안 사는 편입니다만, 더 많은 잠재 저자들이 오덕스러운 자신의 자식을 사람들과 나눌 수 있도록 도와 주세요. 앞으로 책을 또 쓰는 무모한 짓은 하지 않으려고 다짐하는데, 옆에서 ‘한 번이 어렵지~’라며 바람을 넣네요. 후후.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;https://github-ranking.com/repositories, 레일즈 10위, 익스프레스 31위, 장고 53위 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;https://github-ranking.com/repositories, Vue.js 7위(놀라워라~), 레일즈 10위, 익스프레스 31위, 장고 53위 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
       &lt;p&gt;http://www.tiobe.com/tiobe-index/ &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
