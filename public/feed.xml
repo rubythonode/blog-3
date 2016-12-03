@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Dec 2016 22:17:25 +0900</pubDate>
-    <lastBuildDate>Sat, 03 Dec 2016 22:17:25 +0900</lastBuildDate>
+    <pubDate>Sat, 03 Dec 2016 22:27:59 +0900</pubDate>
+    <lastBuildDate>Sat, 03 Dec 2016 22:27:59 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -20,7 +20,7 @@
   &lt;li&gt;Elastic Search: 검색에 특화된 데이터베이스. CRUD 및 설정을 위한 REST API를 제공한다.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;이 포스트의 소스 코드는 &lt;a href=&quot;&quot;&gt;https://github.com/appkr/monolog-scratchpad&lt;/a&gt;에서 받을 수 있다.&lt;/p&gt;
+&lt;p&gt;이 포스트의 소스 코드는 &lt;a href=&quot;https://github.com/appkr/monolog-scratchpad&quot;&gt;https://github.com/appkr/monolog-scratchpad&lt;/a&gt;에서 받을 수 있다.&lt;/p&gt;
 
 &lt;!--more--&gt;
 &lt;div class=&quot;spacer&quot;&gt;• • •&lt;/div&gt;
@@ -313,7 +313,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;아래 그림은 http://localhost:9200/monolog/Laravel/_search?size=100&amp;amp;sort=datetime:desc 으로 요청했을 때의 출력 결과다.&lt;/p&gt;
+&lt;p&gt;아래 그림은 &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:9200/monolog/Laravel/_search?size=100&amp;amp;sort=datetime:desc&lt;/code&gt;로 요청했을 때의 출력 결과다.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/2016-12-03-img-03.png&quot;&gt;&lt;img src=&quot;/images/2016-12-03-img-03.png&quot; alt=&quot;Elastic Search에 적재된 로그&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 

@@ -17,7 +17,7 @@ tags:
 - 라라벨: PHP 프로그래밍 언어로 작성된 풀 스택 웹 프레임워크[^1]
 - Elastic Search: 검색에 특화된 데이터베이스. CRUD 및 설정을 위한 REST API를 제공한다.[^2]
 
-이 포스트의 소스 코드는 [https://github.com/appkr/monolog-scratchpad]()에서 받을 수 있다.
+이 포스트의 소스 코드는 [https://github.com/appkr/monolog-scratchpad](https://github.com/appkr/monolog-scratchpad)에서 받을 수 있다.
 
 <!--more-->
 <div class="spacer">• • •</div>
@@ -306,7 +306,7 @@ Route::get('/', function () {
 });
 ```
 
-아래 그림은 http://localhost:9200/monolog/Laravel/_search?size=100&sort=datetime:desc 으로 요청했을 때의 출력 결과다.
+아래 그림은 `http://localhost:9200/monolog/Laravel/_search?size=100&sort=datetime:desc`로 요청했을 때의 출력 결과다.
 
 [![Elastic Search에 적재된 로그](/images/2016-12-03-img-03.png)](/images/2016-12-03-img-03.png)
 
