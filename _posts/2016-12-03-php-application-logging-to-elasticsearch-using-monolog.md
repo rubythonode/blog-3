@@ -16,6 +16,7 @@ tags:
 
 - 라라벨: PHP 프로그래밍 언어로 작성된 풀 스택 웹 프레임워크[^1]
 - Elastic Search: 검색에 특화된 데이터베이스. CRUD 및 설정을 위한 REST API를 제공한다.[^2]
+- Docker: 컨테이너화된 애플리케이션 운영 환경을 관리하는 도구[^3]
 
 이 포스트의 소스 코드는 [https://github.com/appkr/monolog-scratchpad](https://github.com/appkr/monolog-scratchpad)에서 받을 수 있다.
 
@@ -148,7 +149,7 @@ Docker를 쓰는 이유는 환경 격리다. 호스트 운영체제가 윈도우
 
 [![Elastic Search Welcome Page](/images/2016-12-03-img-01.png)](/images/2016-12-03-img-01.png)
 
-#### 3.1.3. Elastic Search PHP 클라이언트 설치 및 작동 확인
+### 3.2. Elastic Search PHP 클라이언트 설치 및 작동 확인
 
 앞서 Elastic Search는 REST API를 제공한다고 했다. REST API를 소비하는 PHP 클라이언트를 설치한다.
 
@@ -171,7 +172,7 @@ Route::get('/', function () {
 
 [![Elastic Search Client](/images/2016-12-03-img-02.png)](/images/2016-12-03-img-02.png)
 
-#### 3.1.4. Monolog를 위한 Elastic Search 핸들러 만들기 
+### 3.3. Monolog를 위한 Elastic Search 핸들러 만들기 
 
 Monolog 라이브러리에는 `ElasticSearchHandler`가 이미 포함되어 있다. 그런데, 앞 절에서 설치한 Elastic Search 공식 클라이언트가 아닌 다른 클라이언트를 사용하고 있다. API가 달라 부득이 별도의 핸들러를 만들어야 한다. Monolog와 Elastic Search 문서를 읽어 보니 어렵지 않다. 만들어 보자.
 
@@ -276,7 +277,7 @@ class ESHandler extends AbstractProcessingHandler
 }
 ```
 
-#### 3.1.5. 서비스 프로바이더 등록 및 테스트 
+### 3.4. 서비스 프로바이더 등록 및 테스트 
 
 라라벨 프로젝트에서 서비스 프로바이더를 등록하는 일반적인 방법이다.
 
@@ -342,3 +343,4 @@ class CustomLogProvider extends ServiceProvider
 
 [^1]: 라라벨 https://laravel.com
 [^2]: Elastic Search https://www.elastic.co/kr/
+[^3]: Docker https://www.docker.com/
