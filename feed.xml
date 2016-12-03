@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Dec 2016 22:27:59 +0900</pubDate>
-    <lastBuildDate>Sat, 03 Dec 2016 22:27:59 +0900</lastBuildDate>
+    <pubDate>Sun, 04 Dec 2016 07:37:20 +0900</pubDate>
+    <lastBuildDate>Sun, 04 Dec 2016 07:37:20 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -18,6 +18,7 @@
 &lt;ul&gt;
   &lt;li&gt;라라벨: PHP 프로그래밍 언어로 작성된 풀 스택 웹 프레임워크&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
   &lt;li&gt;Elastic Search: 검색에 특화된 데이터베이스. CRUD 및 설정을 위한 REST API를 제공한다.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Docker: 컨테이너화된 애플리케이션 운영 환경을 관리하는 도구&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;이 포스트의 소스 코드는 &lt;a href=&quot;https://github.com/appkr/monolog-scratchpad&quot;&gt;https://github.com/appkr/monolog-scratchpad&lt;/a&gt;에서 받을 수 있다.&lt;/p&gt;
@@ -155,7 +156,7 @@
 
 &lt;p&gt;&lt;a href=&quot;/images/2016-12-03-img-01.png&quot;&gt;&lt;img src=&quot;/images/2016-12-03-img-01.png&quot; alt=&quot;Elastic Search Welcome Page&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;elastic-search-php-----&quot;&gt;3.1.3. Elastic Search PHP 클라이언트 설치 및 작동 확인&lt;/h4&gt;
+&lt;h3 id=&quot;elastic-search-php-----&quot;&gt;3.2. Elastic Search PHP 클라이언트 설치 및 작동 확인&lt;/h3&gt;
 
 &lt;p&gt;앞서 Elastic Search는 REST API를 제공한다고 했다. REST API를 소비하는 PHP 클라이언트를 설치한다.&lt;/p&gt;
 
@@ -178,7 +179,7 @@
 
 &lt;p&gt;&lt;a href=&quot;/images/2016-12-03-img-02.png&quot;&gt;&lt;img src=&quot;/images/2016-12-03-img-02.png&quot; alt=&quot;Elastic Search Client&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;monolog--elastic-search--&quot;&gt;3.1.4. Monolog를 위한 Elastic Search 핸들러 만들기&lt;/h4&gt;
+&lt;h3 id=&quot;monolog--elastic-search--&quot;&gt;3.3. Monolog를 위한 Elastic Search 핸들러 만들기&lt;/h3&gt;
 
 &lt;p&gt;Monolog 라이브러리에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ElasticSearchHandler&lt;/code&gt;가 이미 포함되어 있다. 그런데, 앞 절에서 설치한 Elastic Search 공식 클라이언트가 아닌 다른 클라이언트를 사용하고 있다. API가 달라 부득이 별도의 핸들러를 만들어야 한다. Monolog와 Elastic Search 문서를 읽어 보니 어렵지 않다. 만들어 보자.&lt;/p&gt;
 
@@ -283,7 +284,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h4 id=&quot;section-1&quot;&gt;3.1.5. 서비스 프로바이더 등록 및 테스트&lt;/h4&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;3.4. 서비스 프로바이더 등록 및 테스트&lt;/h3&gt;
 
 &lt;p&gt;라라벨 프로젝트에서 서비스 프로바이더를 등록하는 일반적인 방법이다.&lt;/p&gt;
 
@@ -354,6 +355,9 @@
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
       &lt;p&gt;Elastic Search https://www.elastic.co/kr/ &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;Docker https://www.docker.com/ &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
