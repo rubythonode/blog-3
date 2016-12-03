@@ -222,7 +222,7 @@ class CustomLogProvider extends ServiceProvider
         $esHandler->pushProcessor(function (array $record) {
             $record['extra']['app_name'] = config('app.name');
             $record['extra']['app_version'] = env('APP_VERSION', -1);
-            $record['extra']['finterprint'] = request()->fingerprint();
+            $record['extra']['fingerprint'] = request()->fingerprint();
             return $record;
         });
         
