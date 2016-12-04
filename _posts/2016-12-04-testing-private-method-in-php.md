@@ -58,10 +58,10 @@ class CvsProduct extends BaseQuery implements Queryable
             $this->buildParam($sf, $regionId)
         );
 
-        // 검색 결과는 여러 점포에서 제폼을 검색하므로 동일 제품이 검색 결과에 나타난다.
+        // 검색 결과는 여러 상점에서 제폼을 검색하므로 동일 제품이 검색 결과에 나타난다.
         // Elastic Search는 이미 Aggregation(GROUP BY)된 결과를 반환하는 것이 아니라,
         // 특정 필드 값에 따라 Aggregation했을 때의 ID값을 결과에 포함하여 반환한다.
-        // 해서 실제 필요한 개수보다 더 많은 레코드를 요청하고, 중복되지 않는 해당 레코드만 골라낸 후 페이징을 해야 한다.
+        // 해서 실제 필요한 개수보다 더 많은 레코드를 요청하고, 필요한 레코드만 골라낸 후 페이징을 해야 한다.
         // 부모 클래스의 fetch() 메서드가 이 역할을 담당한다.
         $filtered = $this->fetch($this->model->distinctAttribute(), $offset, $limit);
 
