@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Dec 2016 15:45:36 +0900</pubDate>
-    <lastBuildDate>Sun, 04 Dec 2016 15:45:36 +0900</lastBuildDate>
+    <pubDate>Sun, 04 Dec 2016 16:46:58 +0900</pubDate>
+    <lastBuildDate>Sun, 04 Dec 2016 16:46:58 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -223,14 +223,13 @@
 &lt;p&gt;OS X의 PHP 내장 웹 서버에서 검색 서비스를 구동하고, Elastic Search는 원격에 있는 상태로 테스트했다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# storage/logs/lumen.log&lt;/span&gt;
+
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2016-12-04 15:13:22] search.DEBUG: 검색 요청 수신:SearchService.php:69 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0.04101300239563] 
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2016-12-04 15:13:22] search.DEBUG: RegionId 페치 완료&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;regionId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:SearchService.php:77 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0.48165106773376] 
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2016-12-04 15:13:22] search.DEBUG: 검색 완료:SearchService.php:87 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0.7775821685791] 
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2016-12-04 15:13:22] search.DEBUG: 성능 요구량 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;메모리(MB) : 6.883152&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;CPU(%): 1.97802734375&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/2016-12-04-img-02.png&quot;&gt;&lt;img src=&quot;/images/2016-12-04-img-02.png&quot; alt=&quot;Integration Test&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Dec 2016 00:00:00 +0900</pubDate>
         <link>http://blog.appkr.kr/work-n-play/testing-private-method-in-php/</link>
