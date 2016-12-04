@@ -220,10 +220,9 @@ OS X의 PHP 내장 웹 서버에서 검색 서비스를 구동하고, Elastic Se
 
 ```bash
 # storage/logs/lumen.log
+
 [2016-12-04 15:13:22] search.DEBUG: 검색 요청 수신:SearchService.php:69 [0.04101300239563] 
 [2016-12-04 15:13:22] search.DEBUG: RegionId 페치 완료(regionId=****):SearchService.php:77 [0.48165106773376] 
 [2016-12-04 15:13:22] search.DEBUG: 검색 완료:SearchService.php:87 [0.7775821685791] 
 [2016-12-04 15:13:22] search.DEBUG: 성능 요구량 ["메모리(MB) : 6.883152","CPU(%): 1.97802734375"] 
 ```
-
-[![Integration Test](/images/2016-12-04-img-02.png)](/images/2016-12-04-img-02.png)
