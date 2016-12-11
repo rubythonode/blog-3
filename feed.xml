@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Dec 2016 18:32:59 +0900</pubDate>
-    <lastBuildDate>Sun, 11 Dec 2016 18:32:59 +0900</lastBuildDate>
+    <pubDate>Sun, 11 Dec 2016 18:35:07 +0900</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2016 18:35:07 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -1208,7 +1208,7 @@
 
 &lt;p&gt;MySQL에 저장된 2개의 레코드를 팅커(라라벨 내장 REPL) 콘솔에서 확인했봤다.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2017-11-01-img-02.png&quot;&gt;&lt;img src=&quot;/images/2016-11-07-img-01.png&quot; alt=&quot;Test Vector&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2016-11-07-img-01.png&quot;&gt;&lt;img src=&quot;/images/2016-11-07-img-01.png&quot; alt=&quot;Test Vector&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;section-2&quot;&gt;2.2. 테스트 코드&lt;/h3&gt;
 
