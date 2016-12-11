@@ -9,6 +9,7 @@ tags:
 - RPC
 - "Apache Thrift"
 - PHP
+image: https://rofildex86.files.wordpress.com/2015/02/clack-middleware-2.png
 ---
 
 앞서 [1부](/work-n-play/how-to-use-apache-thrift-in-php-part-1/)에서는 다음 내용을 다루었다.
