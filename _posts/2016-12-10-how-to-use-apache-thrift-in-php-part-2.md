@@ -216,7 +216,7 @@ class PostsController extends Controller
 
 ### 3.2. 서비스 핸들러 만들기
 
-서비스를 미들웨어로 감싸 줄 `ThriftServiceHandler`를 만들 차례다. 핸들러가 어려운데 미들웨어가 있으면 미들웨어를 구동시키고, 없으면 서비스를 바로 호출해 주는 녀석이다. 진짜 서비스가 아니지만 프로세서에서 자신이 서비스인 양 행세하는 녀석이다.
+서비스를 미들웨어로 감싸 줄 `ThriftServiceHandler`를 만들 차례다. 핸들러의 개념을 이해하기 어려운데 미들웨어가 있으면 미들웨어를 구동시키고, 없으면 서비스를 바로 호출해 주는 녀석이다. 진짜 서비스가 아니지만 자신이 서비스인 양 행세해서, 프로세서가 서비스로 간주하고 호출하는 녀석이다.
 
 ```php
 <?php // app/Thrift/ThriftServiceHandler.php
@@ -405,13 +405,22 @@ class ThriftClientTest extends TestCase
 }
 ```
 
-`Appkr\Thrift\Errors\SystemException: No query results for model [App\Post] 100`처럼 예외 객체가 클라이언트에게 정확하게 전달된 것을 확인할 수 있다.
+아래 그림에서 `Appkr\Thrift\Errors\SystemException: No query results for model [App\Post] 100`처럼 예외 객체가 클라이언트에게 정확하게 전달된 것을 확인할 수 있다.
+
+```sh
+# PHPUnit에서 특정 테스트 메서드만 필터링해서 실행하고 싶을 때 --filter 옵션을 사용한다.
+~/thrift-example-project $ vendor/bin/phpunit --filter testFind
+```
 
 [![ModelNotFoundException](/images/2016-12-10-img-01.png)](/images/2016-12-10-img-01.png)
 
 ## 5. 결론
 
 Thrift를 사용하는 동안 디버깅의 괴로움에 스트레스를 받아야 했다. 그럼에도 불구하고 좋았던 점은 서버와 클라이언트간의 약속을 코드로 표현하고, 그 코드를 문서로 즉시 변환해 공유할 수 있다는 점이었다. 클라이언트 개발자가 서버 코드가 개발되고 문서가 나오기까지 멍 때리고 있는 것이 아니라, 서버와 클라이언트가 병렬로 개발을 시작할 수 있었다.
+
+책임 연쇄 패턴을 한 번에 이해했다면 거짓말이다. 이 예제에서 사용한 Thrift 미들웨어의 콜 스택을 이해하기 쉽도록 아래 그림으로 표현했다.
+
+[![Thrift Middleware Call Stack](/images/2016-12-10-img-02.png)](/images/2016-12-10-img-02.png)
 
 이번 포스트의 예제 프로젝트는 
  
