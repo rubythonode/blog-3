@@ -3,10 +3,10 @@
   <channel>
     <title>Appkr.memo(new Life)</title>
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Dec 2016 14:04:28 +0900</pubDate>
-    <lastBuildDate>Sun, 11 Dec 2016 14:04:28 +0900</lastBuildDate>
+    <link>http://blog.appkr.kr/</link>
+    <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 11 Dec 2016 17:47:48 +0900</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2016 17:47:48 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -436,8 +436,8 @@
 &lt;p&gt;에 공개되어 있다.&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Dec 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/how-to-use-apache-thrift-in-php-part-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/how-to-use-apache-thrift-in-php-part-2/</guid>
+        <link>http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-2/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-2/</guid>
         
         <category>개발자</category>
         
@@ -675,8 +675,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 04 Dec 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/testing-private-method-in-php/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/testing-private-method-in-php/</guid>
+        <link>http://blog.appkr.kr/work-n-play/testing-private-method-in-php/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/testing-private-method-in-php/</guid>
         
         <category>개발자</category>
         
@@ -1041,8 +1041,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 03 Dec 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/php-application-logging-to-elasticsearch-using-monolog/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/php-application-logging-to-elasticsearch-using-monolog/</guid>
+        <link>http://blog.appkr.kr/work-n-play/php-application-logging-to-elasticsearch-using-monolog/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/php-application-logging-to-elasticsearch-using-monolog/</guid>
         
         <category>개발자</category>
         
@@ -1153,8 +1153,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 27 Nov 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/laravel-paper-book-published/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/laravel-paper-book-published/</guid>
+        <link>http://blog.appkr.kr/work-n-play/laravel-paper-book-published/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/laravel-paper-book-published/</guid>
         
         <category>개발자</category>
         
@@ -1372,8 +1372,8 @@
 &lt;p&gt;반면 서비스가 궤도에 올라 사용자가 늘고 1ms와 1KB라도 쥐어 짜야 하는 상황이라면 자체 프레임워크 개발을 고려해볼 만한다. 물론 성능이 더 좋은 플랫폼으로 갈아 타는 방법도 있다. &lt;strong&gt;서비스를 살리기 위해 스택을 버려야지, 스택을 살리기 위해 서비스를 버리는 어리석음을 범하지 말라&lt;/strong&gt;. 라라벨이나 루멘은 범용 프레임워크이므로 최적화가 필요한 초대형 서비스에는 적합하지 않다는 생각이 든다.&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Nov 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/performance-comparison-between-laravel-lumen-homemade/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/performance-comparison-between-laravel-lumen-homemade/</guid>
+        <link>http://blog.appkr.kr/work-n-play/performance-comparison-between-laravel-lumen-homemade/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/performance-comparison-between-laravel-lumen-homemade/</guid>
         
         <category>개발자</category>
         
@@ -2106,8 +2106,8 @@
 &lt;p&gt;에 공개되어 있다.&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Nov 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/how-to-use-apache-thrift-in-php-part-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/how-to-use-apache-thrift-in-php-part-1/</guid>
+        <link>http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-1/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/how-to-use-apache-thrift-in-php-part-1/</guid>
         
         <category>개발자</category>
         
@@ -2245,8 +2245,8 @@
 &lt;p&gt;이 예제에서는 큰 차이를 못 느낄 수 있지만, 배열 요소 하나가 큰 데이터를 가지고 있을 때는 제너레이터를 쓰지 않고는 &lt;code class=&quot;highlighter-rouge&quot;&gt;php.ini&lt;/code&gt; 설정에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;memory_limit&lt;/code&gt; 값을 엄청 늘려야 할 것이다. 배열 순회에 필요한 모든 데이터를 메모리에 적재한 후 실행하는 것과, 이번 순회에 필요한 데이터만 읽어오는 차이가 있다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Oct 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/learn-n-think/understanding-generator/</link>
-        <guid isPermaLink="true">http://localhost:4000/learn-n-think/understanding-generator/</guid>
+        <link>http://blog.appkr.kr/learn-n-think/understanding-generator/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/learn-n-think/understanding-generator/</guid>
         
         <category>개발자</category>
         
@@ -2273,8 +2273,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 01 Oct 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/work-n-play/json-web-token/</link>
-        <guid isPermaLink="true">http://localhost:4000/work-n-play/json-web-token/</guid>
+        <link>http://blog.appkr.kr/work-n-play/json-web-token/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/work-n-play/json-web-token/</guid>
         
         <category>개발자</category>
         
@@ -2303,8 +2303,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 21 Aug 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/around-me/rorlap-workshop-epilog/</link>
-        <guid isPermaLink="true">http://localhost:4000/around-me/rorlap-workshop-epilog/</guid>
+        <link>http://blog.appkr.kr/around-me/rorlap-workshop-epilog/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/around-me/rorlap-workshop-epilog/</guid>
         
         <category>개발자</category>
         
@@ -2383,8 +2383,8 @@
 &lt;p&gt;다행히 내가 주력으로 하는 라라벨 웹 프레임워크는 &lt;a href=&quot;https://webpack.github.io/&quot;&gt;Webpack&lt;/a&gt; 빌드 시스템과, &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt; 태스크 러너를 기본으로 사용하고 있어 두 개의 짐은 덜었다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 07 Aug 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/learn-n-think/javascript-promise-101/</link>
-        <guid isPermaLink="true">http://localhost:4000/learn-n-think/javascript-promise-101/</guid>
+        <link>http://blog.appkr.kr/learn-n-think/javascript-promise-101/</link>
+        <guid isPermaLink="true">http://blog.appkr.kr/learn-n-think/javascript-promise-101/</guid>
         
         <category>개발자</category>
         
