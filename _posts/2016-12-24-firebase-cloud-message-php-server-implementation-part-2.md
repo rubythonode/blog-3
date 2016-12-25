@@ -247,7 +247,7 @@ class FCMHandler
         // 라라벨의 서비스 컨테이너에 인스턴스를 등록할 때의 키를 알 수 있다.
         // 'fcm.sender'라는 키를 사용하고 있어서, app() 헬퍼를 이용해서 등록된 인스턴스를 가져왔다.
         // 마치 $container = ['key' => new stdClass]에서 $container['key']를
-        // 사용하는 것과 같은 개념이다. 
+        // 사용해서 할당된 stdClass 인스턴스를 얻어 오는 것과 같은 개념이다.
         $this->fcm = app('fcm.sender');
     }
 
