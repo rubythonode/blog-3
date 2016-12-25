@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Dec 2016 14:50:53 +0900</pubDate>
-    <lastBuildDate>Sun, 25 Dec 2016 14:50:53 +0900</lastBuildDate>
+    <pubDate>Sun, 25 Dec 2016 21:25:43 +0900</pubDate>
+    <lastBuildDate>Sun, 25 Dec 2016 21:25:43 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -69,7 +69,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;아하! &lt;code class=&quot;highlighter-rouge&quot;&gt;FCM_SERVER_KEY&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;FCM_SENDER_ID&lt;/code&gt; 두 개의 환경 변수를 참조하는 것을 알았으므로, 1부에서 FCM 콘솔에서 프로젝트를 등록하고 얻은 값들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; 파일에 값을 써준다.&lt;/p&gt;
+&lt;p&gt;아하! &lt;code class=&quot;highlighter-rouge&quot;&gt;FCM_SERVER_KEY&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;FCM_SENDER_ID&lt;/code&gt; 두 개의 환경 변수를 참조하는 것을 알았으므로, 1부에서 FCM 콘솔에서 프로젝트를 등록하고 얻은 값들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; 파일에 써준다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# .env&lt;/span&gt;
 
@@ -80,7 +80,7 @@
 
 &lt;h3 id=&quot;fcm-&quot;&gt;1.2. 설치한 라이브러리를 사용하여 FCM 보내기&lt;/h3&gt;
 
-&lt;p&gt;설치한 라이브러리의 기능을 가장 쉽게 확인할 수 있는 방법은 라우트를 하나 만들고 브라우저에서 해당 라우트로 접속해서 작동을 확인하는 방법이다. 아래 코드는 라이브러리의 &lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt;에 소개된 내용 그대로다.&lt;/p&gt;
+&lt;p&gt;설치한 라이브러리의 기능을 가장 쉽게 확인할 수 있는 방법은 라우트를 하나 만들고 브라우저에서 해당 라우트로 접속해서 작동을 확인하는 방법이다. 아래 코드는 &lt;a href=&quot;https://github.com/brozot/Laravel-FCM#basic-usage&quot;&gt;라이브러리의 &lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt;에 소개된 내용&lt;/a&gt; 그대로다.&lt;/p&gt;
 
 &lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// routes/api.php
 &lt;/span&gt;
@@ -248,9 +248,9 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
 &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FCMHandler&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;sd&quot;&gt;/**
-     * 푸쉬 메시지를 보낼 단말기의 registration_id 목록.
+     * 푸쉬 메시지를 보낼 단말기의 registration_id(==push_service_id) 목록.
      *
-     * @var array
+     * @var array[string $push_service_id]
      */&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$to&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
 
@@ -259,7 +259,7 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
      *
      * @var array
      */&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 
     &lt;span class=&quot;sd&quot;&gt;/**
      * @var \LaravelFCM\Sender\FCMSender
@@ -442,7 +442,7 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
     &lt;span class=&quot;sd&quot;&gt;/**
      * 변경된 단말기의 토큰을 DB에 기록한다.
      *
-     * @param array[$oldKey =&amp;gt; $newKey] $tokens
+     * @param array[string $oldKey =&amp;gt; string $newKey] $tokens
      * @return bool
      */&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;updateDevices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -459,7 +459,7 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
     &lt;span class=&quot;sd&quot;&gt;/**
      * 유효하지 않은 단말기 토큰을 DB에서 삭제한다.
      *
-     * @param array[$token] $tokens
+     * @param array[string $token] $tokens
      * @return bool
      */&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deleteDevices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -478,7 +478,7 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
 
 &lt;h2 id=&quot;fcm--&quot;&gt;4. FCM 보내기 구현&lt;/h2&gt;
 
-&lt;p&gt;1.2절에서 썼던 코드는 &lt;code class=&quot;highlighter-rouge&quot;&gt;FCMHandler&lt;/code&gt;를 이용하여 다음과 같이 바뀌었다.&lt;/p&gt;
+&lt;p&gt;1.2절에서 썼던 코드는 &lt;code class=&quot;highlighter-rouge&quot;&gt;FCMHandler&lt;/code&gt;를 이용하면 다음과 같이 바뀐다.&lt;/p&gt;
 
 &lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// routes/api.php
 &lt;/span&gt;
