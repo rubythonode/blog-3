@@ -69,7 +69,7 @@ return [
 ];
 ```
 
-아하! `FCM_SERVER_KEY`, `FCM_SENDER_ID` 두 개의 환경 변수를 참조하는 것을 알았으므로, 1부에서 FCM 콘솔에서 프로젝트를 등록하고 얻은 값들을 `.env` 파일에 값을 써준다.
+아하! `FCM_SERVER_KEY`, `FCM_SENDER_ID` 두 개의 환경 변수를 참조하는 것을 알았으므로, 1부에서 FCM 콘솔에서 프로젝트를 등록하고 얻은 값들을 `.env` 파일에 써준다.
 
 ```bash
 # .env
@@ -80,7 +80,7 @@ FCM_SENDER_ID=217...581
 
 ### 1.2. 설치한 라이브러리를 사용하여 FCM 보내기
 
-설치한 라이브러리의 기능을 가장 쉽게 확인할 수 있는 방법은 라우트를 하나 만들고 브라우저에서 해당 라우트로 접속해서 작동을 확인하는 방법이다. 아래 코드는 라이브러리의 `README`에 소개된 내용 그대로다.
+설치한 라이브러리의 기능을 가장 쉽게 확인할 수 있는 방법은 라우트를 하나 만들고 브라우저에서 해당 라우트로 접속해서 작동을 확인하는 방법이다. 아래 코드는 [라이브러리의 `README`에 소개된 내용](https://github.com/brozot/Laravel-FCM#basic-usage) 그대로다.
 
 ```php
 <?php // routes/api.php
@@ -204,9 +204,9 @@ use LaravelFCM\Response\DownstreamResponse;
 class FCMHandler
 {
     /**
-     * 푸쉬 메시지를 보낼 단말기의 registration_id 목록.
+     * 푸쉬 메시지를 보낼 단말기의 registration_id(==push_service_id) 목록.
      *
-     * @var array
+     * @var array[string $push_service_id]
      */
     protected $to = [];
 
@@ -215,7 +215,7 @@ class FCMHandler
      *
      * @var array
      */
-    protected $data = [];
+    protected $data = [string $key => string $value];
 
     /**
      * @var \LaravelFCM\Sender\FCMSender
@@ -398,7 +398,7 @@ class FCMHandler
     /**
      * 변경된 단말기의 토큰을 DB에 기록한다.
      *
-     * @param array[$oldKey => $newKey] $tokens
+     * @param array[string $oldKey => string $newKey] $tokens
      * @return bool
      */
     protected function updateDevices(array $tokens)
@@ -415,7 +415,7 @@ class FCMHandler
     /**
      * 유효하지 않은 단말기 토큰을 DB에서 삭제한다.
      *
-     * @param array[$token] $tokens
+     * @param array[string $token] $tokens
      * @return bool
      */
     protected function deleteDevices(array $tokens) {
@@ -433,7 +433,7 @@ class FCMHandler
 
 ## 4. FCM 보내기 구현
 
-1.2절에서 썼던 코드는 `FCMHandler`를 이용하여 다음과 같이 바뀌었다.
+1.2절에서 썼던 코드는 `FCMHandler`를 이용하면 다음과 같이 바뀐다.
 
 ```php
 <?php // routes/api.php
