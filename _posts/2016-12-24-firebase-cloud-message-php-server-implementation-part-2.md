@@ -213,9 +213,9 @@ class FCMHandler
     /**
      * 보낼 메시지.
      *
-     * @var array
+     * @var array[string $key => string $value]
      */
-    protected $data = [string $key => string $value];
+    protected $data = [];
 
     /**
      * @var \LaravelFCM\Sender\FCMSender
@@ -398,7 +398,7 @@ class FCMHandler
     /**
      * 변경된 단말기의 토큰을 DB에 기록한다.
      *
-     * @param array[string $oldKey => string $newKey] $tokens
+     * @param array[string $old => string $new] $tokens
      * @return bool
      */
     protected function updateDevices(array $tokens)
@@ -415,7 +415,7 @@ class FCMHandler
     /**
      * 유효하지 않은 단말기 토큰을 DB에서 삭제한다.
      *
-     * @param array[string $token] $tokens
+     * @param array[string $push_service_id] $tokens
      * @return bool
      */
     protected function deleteDevices(array $tokens) {

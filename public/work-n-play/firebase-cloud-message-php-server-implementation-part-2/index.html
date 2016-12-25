@@ -382,9 +382,9 @@ array <span class="o">(</span><span class="nv">size</span><span class="o">=</spa
     <span class="sd">/**
      * 보낼 메시지.
      *
-     * @var array
+     * @var array[string $key =&gt; string $value]
      */</span>
-    <span class="k">protected</span> <span class="nv">$data</span> <span class="o">=</span> <span class="p">[</span><span class="nx">string</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nx">string</span> <span class="nv">$value</span><span class="p">];</span>
+    <span class="k">protected</span> <span class="nv">$data</span> <span class="o">=</span> <span class="p">[];</span>
 
     <span class="sd">/**
      * @var \LaravelFCM\Sender\FCMSender
@@ -567,7 +567,7 @@ array <span class="o">(</span><span class="nv">size</span><span class="o">=</spa
     <span class="sd">/**
      * 변경된 단말기의 토큰을 DB에 기록한다.
      *
-     * @param array[string $oldKey =&gt; string $newKey] $tokens
+     * @param array[string $old =&gt; string $new] $tokens
      * @return bool
      */</span>
     <span class="k">protected</span> <span class="k">function</span> <span class="nf">updateDevices</span><span class="p">(</span><span class="k">array</span> <span class="nv">$tokens</span><span class="p">)</span>
@@ -584,7 +584,7 @@ array <span class="o">(</span><span class="nv">size</span><span class="o">=</spa
     <span class="sd">/**
      * 유효하지 않은 단말기 토큰을 DB에서 삭제한다.
      *
-     * @param array[string $token] $tokens
+     * @param array[string $push_service_id] $tokens
      * @return bool
      */</span>
     <span class="k">protected</span> <span class="k">function</span> <span class="nf">deleteDevices</span><span class="p">(</span><span class="k">array</span> <span class="nv">$tokens</span><span class="p">)</span> <span class="p">{</span>
