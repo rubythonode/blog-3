@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Dec 2016 21:25:43 +0900</pubDate>
-    <lastBuildDate>Sun, 25 Dec 2016 21:25:43 +0900</lastBuildDate>
+    <pubDate>Sun, 25 Dec 2016 21:30:52 +0900</pubDate>
+    <lastBuildDate>Sun, 25 Dec 2016 21:30:52 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -257,9 +257,9 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
     &lt;span class=&quot;sd&quot;&gt;/**
      * 보낼 메시지.
      *
-     * @var array
+     * @var array[string $key =&amp;gt; string $value]
      */&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
 
     &lt;span class=&quot;sd&quot;&gt;/**
      * @var \LaravelFCM\Sender\FCMSender
@@ -442,7 +442,7 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
     &lt;span class=&quot;sd&quot;&gt;/**
      * 변경된 단말기의 토큰을 DB에 기록한다.
      *
-     * @param array[string $oldKey =&amp;gt; string $newKey] $tokens
+     * @param array[string $old =&amp;gt; string $new] $tokens
      * @return bool
      */&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;updateDevices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -459,7 +459,7 @@ array &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot
     &lt;span class=&quot;sd&quot;&gt;/**
      * 유효하지 않은 단말기 토큰을 DB에서 삭제한다.
      *
-     * @param array[string $token] $tokens
+     * @param array[string $push_service_id] $tokens
      * @return bool
      */&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deleteDevices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
