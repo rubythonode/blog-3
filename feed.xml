@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Jan 2017 15:17:42 +0900</pubDate>
-    <lastBuildDate>Sat, 07 Jan 2017 15:17:42 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Jan 2017 07:49:16 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Jan 2017 07:49:16 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -306,15 +306,15 @@ string&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;26&lt;span class=&quot;o&quo
 
 &lt;p&gt;이 코드의 실행 결과는 다음과 같다. 전역 예외 처리기 또는 에러 처리가가 없으므로, PHP 런타임이 치명적 오류(Fatal error)를 내 뱉고 있는 상황이다. 운영 중인 웹 사이트에서 이런 메시지가 나온 적이 있는가? 그런데, 이 상황을 몇 시간째 모르고 있었던 경우는 없는가? 아찔하다~&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP Fatal error:  Uncaught TypeError: Argument 1 passed to foo&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; must be of the &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;integer, string given, called &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /Users/appkr/workspace/exceptions.php on line 31 and defined &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /Users/appkr/workspace/exceptions.php:22
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PHP Fatal error:  Uncaught TypeError: Argument 1 passed to foo&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; must be of the &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;integer, string given, called &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; ~/working-with-exceptions/exceptions.php on line 31 and defined &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; ~/working-with-exceptions/exceptions.php:22
 Stack trace:
-&lt;span class=&quot;c&quot;&gt;#0 /Users/appkr/workspace/exceptions.php(31): foo('string')&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#0 ~/working-with-exceptions/exceptions.php(31): foo('string')&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#1 {main}&lt;/span&gt;
-  thrown &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /Users/appkr/workspace/exceptions.php on line 22
+  thrown &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; ~/working-with-exceptions/exceptions.php on line 22
 
 Call Stack:
-    0.0002     355912   1. &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;main&lt;span class=&quot;o&quot;&gt;}()&lt;/span&gt; /Users/appkr/workspace/exceptions.php:0
-    0.0002     355912   2. foo&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; /Users/appkr/workspace/exceptions.php:31
+    0.0002     355912   1. &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;main&lt;span class=&quot;o&quot;&gt;}()&lt;/span&gt; ~/working-with-exceptions/exceptions.php:0
+    0.0002     355912   2. foo&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; ~/working-with-exceptions/exceptions.php:31
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
