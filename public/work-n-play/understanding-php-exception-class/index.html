@@ -431,15 +431,15 @@ string<span class="o">(</span>26<span class="o">)</span> <span class="s2">"마�
 
 <p>이 코드의 실행 결과는 다음과 같다. 전역 예외 처리기 또는 에러 처리가가 없으므로, PHP 런타임이 치명적 오류(Fatal error)를 내 뱉고 있는 상황이다. 운영 중인 웹 사이트에서 이런 메시지가 나온 적이 있는가? 그런데, 이 상황을 몇 시간째 모르고 있었던 경우는 없는가? 아찔하다~</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>PHP Fatal error:  Uncaught TypeError: Argument 1 passed to foo<span class="o">()</span> must be of the <span class="nb">type </span>integer, string given, called <span class="k">in</span> /Users/appkr/workspace/exceptions.php on line 31 and defined <span class="k">in</span> /Users/appkr/workspace/exceptions.php:22
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>PHP Fatal error:  Uncaught TypeError: Argument 1 passed to foo<span class="o">()</span> must be of the <span class="nb">type </span>integer, string given, called <span class="k">in</span> ~/working-with-exceptions/exceptions.php on line 31 and defined <span class="k">in</span> ~/working-with-exceptions/exceptions.php:22
 Stack trace:
-<span class="c">#0 /Users/appkr/workspace/exceptions.php(31): foo('string')</span>
+<span class="c">#0 ~/working-with-exceptions/exceptions.php(31): foo('string')</span>
 <span class="c">#1 {main}</span>
-  thrown <span class="k">in</span> /Users/appkr/workspace/exceptions.php on line 22
+  thrown <span class="k">in</span> ~/working-with-exceptions/exceptions.php on line 22
 
 Call Stack:
-    0.0002     355912   1. <span class="o">{</span>main<span class="o">}()</span> /Users/appkr/workspace/exceptions.php:0
-    0.0002     355912   2. foo<span class="o">()</span> /Users/appkr/workspace/exceptions.php:31
+    0.0002     355912   1. <span class="o">{</span>main<span class="o">}()</span> ~/working-with-exceptions/exceptions.php:0
+    0.0002     355912   2. foo<span class="o">()</span> ~/working-with-exceptions/exceptions.php:31
 </code></pre>
 </div>
 
