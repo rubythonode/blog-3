@@ -845,9 +845,9 @@ Stack trace:
   <li><a href="https://github.com/appkr/working-with-exceptions/tree/sentry-integration">sentry-integration</a></li>
 </ul>
 
-<p><a href="/images/2017-01-15-img-05.png"><img src="/images/2017-01-15-img-05.png" alt="BugSnag Dashboard" /></a></p>
+<p><a href="/images/2017-01-15-img-06.png"><img src="/images/2017-01-15-img-06.png" alt="BugSnag Dashboard" /></a></p>
 
-<p><a href="/images/2017-01-15-img-06.png"><img src="/images/2017-01-15-img-06.png" alt="Sentry Dashboard" /></a></p>
+<p><a href="/images/2017-01-15-img-05.png"><img src="/images/2017-01-15-img-05.png" alt="Sentry Dashboard" /></a></p>
 
 <hr />
 
@@ -895,8 +895,8 @@ Stack trace:
                 <span class="k">public</span> <span class="k">function</span> <span class="nf">report</span><span class="p">(</span><span class="nx">Exception</span> <span class="nv">$exception</span><span class="p">)</span> <span class="p">{}</span>
                 <span class="k">public</span> <span class="k">function</span> <span class="nf">render</span><span class="p">(</span><span class="nv">$request</span><span class="p">,</span> <span class="nx">Exception</span> <span class="nv">$exception</span><span class="p">)</span>
                 <span class="p">{</span>
-                    <span class="c1">// 부모의 render() 메서드를 완전히 덮어 쓰고
-</span>                    <span class="c1">// 받은 예외를 다시 던진다.
+                    <span class="c1">// 부모의 render() 메서드를 완전히 덮어 써서
+</span>                    <span class="c1">// 기존 구현을 무력화시키고, 받은 예외는 다시 던진다.
 </span>                    <span class="k">throw</span> <span class="nv">$exception</span><span class="p">;</span>
                 <span class="p">}</span>
             <span class="p">}</span>

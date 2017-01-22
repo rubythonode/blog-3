@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Jan 2017 21:32:24 +0900</pubDate>
-    <lastBuildDate>Sun, 22 Jan 2017 21:32:24 +0900</lastBuildDate>
+    <pubDate>Sun, 22 Jan 2017 21:39:56 +0900</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 21:39:56 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -720,9 +720,9 @@ Stack trace:
   &lt;li&gt;&lt;a href=&quot;https://github.com/appkr/working-with-exceptions/tree/sentry-integration&quot;&gt;sentry-integration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2017-01-15-img-05.png&quot;&gt;&lt;img src=&quot;/images/2017-01-15-img-05.png&quot; alt=&quot;BugSnag Dashboard&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2017-01-15-img-06.png&quot;&gt;&lt;img src=&quot;/images/2017-01-15-img-06.png&quot; alt=&quot;BugSnag Dashboard&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/2017-01-15-img-06.png&quot;&gt;&lt;img src=&quot;/images/2017-01-15-img-06.png&quot; alt=&quot;Sentry Dashboard&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2017-01-15-img-05.png&quot;&gt;&lt;img src=&quot;/images/2017-01-15-img-05.png&quot; alt=&quot;Sentry Dashboard&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -770,8 +770,8 @@ Stack trace:
                 &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$exception&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
                 &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$exception&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
                 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;c1&quot;&gt;// 부모의 render() 메서드를 완전히 덮어 쓰고
-&lt;/span&gt;                    &lt;span class=&quot;c1&quot;&gt;// 받은 예외를 다시 던진다.
+                    &lt;span class=&quot;c1&quot;&gt;// 부모의 render() 메서드를 완전히 덮어 써서
+&lt;/span&gt;                    &lt;span class=&quot;c1&quot;&gt;// 기존 구현을 무력화시키고, 받은 예외는 다시 던진다.
 &lt;/span&gt;                    &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$exception&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
                 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
             &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
