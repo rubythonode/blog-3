@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Jan 2017 21:44:35 +0900</pubDate>
-    <lastBuildDate>Sun, 22 Jan 2017 21:44:35 +0900</lastBuildDate>
+    <pubDate>Sun, 22 Jan 2017 21:47:47 +0900</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 21:47:47 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -693,7 +693,7 @@ Stack trace:
 
 &lt;h2 id=&quot;6-결론&quot;&gt;6. 결론&lt;/h2&gt;
 
-&lt;p&gt;10년의 공백 후 다시 프로그래밍 세계로 돌아온 2012년에는 객체 지향 프로그래밍을 전혀 몰랐고, 예외 같은 것은 당연히 쓸 줄 몰라 함수마다 &lt;code class=&quot;highlighter-rouge&quot;&gt;global $logs&lt;/code&gt;(&lt;code class=&quot;highlighter-rouge&quot;&gt;['level' =&amp;gt; 1, 'message' =&amp;gt; '', '...' =&amp;gt; '...'']&lt;/code&gt;)를 남발했던 기억이 난다. 모던 프로그래밍에서 예외는 꼭 배워야 할 중요한 주제임에 틀림없다.&lt;/p&gt;
+&lt;p&gt;10년의 공백 후 다시 프로그래밍 세계로 돌아온 2012년에는 객체 지향 프로그래밍을 전혀 몰랐고, 예외 같은 것은 당연히 쓸 줄 몰라 함수마다 &lt;code class=&quot;highlighter-rouge&quot;&gt;global $logs&lt;/code&gt;(&lt;code class=&quot;highlighter-rouge&quot;&gt;['level' =&amp;gt; 1, 'message' =&amp;gt; '', '...' =&amp;gt; '...']&lt;/code&gt;)를 남발했던 기억이 난다. 모던 프로그래밍에서 예외는 꼭 배워야 할 중요한 주제임에 틀림없다.&lt;/p&gt;
 
 &lt;p&gt;라라벨에서는 애플리케이션이 작동하는 수명 주기동안 어디서든지 예외를 던질 수 있다. 사용자 인증, 미들웨어, 폼 리퀘스트, 컨트롤러, 서비스 레이어 등등 어디서든지 말이다. 그리고, 개발자들은 전역 예외 처리기를 이용함으로써 프로그램 실행 흐름을 안전하고 구조적으로 제어할 수 있다.&lt;/p&gt;
 
