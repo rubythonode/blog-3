@@ -697,7 +697,28 @@ interface Renderable
 
 라라벨에서는 애플리케이션이 작동하는 수명 주기동안 어디서든지 예외를 던질 수 있다. 사용자 인증, 미들웨어, 폼 리퀘스트, 컨트롤러, 서비스 레이어 등등 어디서든지 말이다. 그리고, 개발자들은 전역 예외 처리기를 이용함으로써 프로그램 실행 흐름을 안전하고 구조적으로 제어할 수 있다.
 
-휴~ 예제 프로젝트를 포함해서 토요일 오후~일요일 오전을 꼬박 할애한 포스트가 끝났다. 조금이라도 편한 일주일을 맞이하기 위해, 이젠 회사 일을 할꺼다~   
+휴~ 예제 프로젝트를 포함해서 토요일 오후~일요일 오전을 꼬박 할애한 포스트가 끝났다. 조금이라도 편한 일주일을 맞이하기 위해, 이젠 회사 일을 할꺼다~
+
+## 덧
+
+4.1.절에 언급한 외부 서비스를 시용하면 예외와 관련된 여러 가지 정보를 잘 분류해서 시각적으로 보고 관리할 수 있다. 가령 이런 정보를 얻을 수 있다. 
+  
+-   예외가 발생시킨 클라이언트의 IP 주소, HTTP 요청 헤더, 대상 URL과 메서드, 쿼리 스트링과 파라미터, 세션, 쿠키 등
+-   `User` 객체
+-   예외가 발생한 환경(`production` or `staging`) 및 릴리스 버전
+-   역추적 코드 트래스 외 DB쿼리, UI 이동 등의 예외 발생 경로
+-   담당자 할당하는 등 여러 가지 관리 기능을 제공한다.
+
+[BugSnag](https://www.bugsnag.com/)과 [Sentry](https://sentry.io/welcome/) 두 개의 서비스를 이 프로젝트에 통합해봤다.
+
+소스코드는 다음 브랜치에 있고, 그 아래 그림은 각 서비스의 대시보드 스크린샷이다.
+
+-   [bugsnag-integration](https://github.com/appkr/working-with-exceptions/tree/bugsnag-integration)
+-   [sentry-integration](https://github.com/appkr/working-with-exceptions/tree/sentry-integration)
+
+[![BugSnag Dashboard](/images/2017-01-15-img-05.png)](/images/2017-01-15-img-05.png)
+
+[![Sentry Dashboard](/images/2017-01-15-img-06.png)](/images/2017-01-15-img-06.png)
 
 ---
 

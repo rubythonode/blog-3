@@ -824,6 +824,31 @@ Stack trace:
 
 <p>휴~ 예제 프로젝트를 포함해서 토요일 오후~일요일 오전을 꼬박 할애한 포스트가 끝났다. 조금이라도 편한 일주일을 맞이하기 위해, 이젠 회사 일을 할꺼다~</p>
 
+<h2 id="덧">덧</h2>
+
+<p>4.1.절에 언급한 외부 서비스를 시용하면 예외와 관련된 여러 가지 정보를 잘 분류해서 시각적으로 보고 관리할 수 있다. 가령 이런 정보를 얻을 수 있다.</p>
+
+<ul>
+  <li>예외가 발생시킨 클라이언트의 IP 주소, HTTP 요청 헤더, 대상 URL과 메서드, 쿼리 스트링과 파라미터, 세션, 쿠키 등</li>
+  <li><code class="highlighter-rouge">User</code> 객체</li>
+  <li>예외가 발생한 환경(<code class="highlighter-rouge">production</code> or <code class="highlighter-rouge">staging</code>) 및 릴리스 버전</li>
+  <li>역추적 코드 트래스 외 DB쿼리, UI 이동 등의 예외 발생 경로</li>
+  <li>담당자 할당하는 등 여러 가지 관리 기능을 제공한다.</li>
+</ul>
+
+<p><a href="https://www.bugsnag.com/">BugSnag</a>과 <a href="https://sentry.io/welcome/">Sentry</a> 두 개의 서비스를 이 프로젝트에 통합해봤다.</p>
+
+<p>소스코드는 다음 브랜치에 있고, 그 아래 그림은 각 서비스의 대시보드 스크린샷이다.</p>
+
+<ul>
+  <li><a href="https://github.com/appkr/working-with-exceptions/tree/bugsnag-integration">bugsnag-integration</a></li>
+  <li><a href="https://github.com/appkr/working-with-exceptions/tree/sentry-integration">sentry-integration</a></li>
+</ul>
+
+<p><a href="/images/2017-01-15-img-05.png"><img src="/images/2017-01-15-img-05.png" alt="BugSnag Dashboard" /></a></p>
+
+<p><a href="/images/2017-01-15-img-06.png"><img src="/images/2017-01-15-img-06.png" alt="Sentry Dashboard" /></a></p>
+
 <hr />
 
 <div class="footnotes">
