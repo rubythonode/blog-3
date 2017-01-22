@@ -143,7 +143,7 @@
 <!--more-->
 <div class="spacer">• • •</div>
 
-<h2 id="section">1. 새 라라벨 프로젝트 만들기</h2>
+<h2 id="1-새-라라벨-프로젝트-만들기">1. 새 라라벨 프로젝트 만들기</h2>
 
 <p>로컬 컴퓨터에 라라벨을 설치하고 구동하기 위한 환경이 준비되어 있어야 한다. 없다면 필자가 쓴 <a href="https://appkr.github.io/l5book-snippets/draft/a0-setup.html">운영체제별 개발 환경 준비</a> 매뉴얼을 참고한다.</p>
 
@@ -175,7 +175,7 @@
 
 <p>이하 필자는 로컬 서버 대신 <a href="https://laravel.kr/docs/5.3/valet">라라벨 Valet 서버</a>를 이용할 것이다. 라라벨 Valet 서버를 이용하면, 로컬 서버 구동없이 프로젝트 폴더 이름에 <code class="highlighter-rouge">.dev</code>를 붙여서 브라우저에서 바로 확인할 수 있어서 편리하다.</p>
 
-<h2 id="section-1">2. 예외 클래스 만들기</h2>
+<h2 id="2-예외-클래스-만들기">2. 예외 클래스 만들기</h2>
 
 <p>PHP 내장 예외 클래스를 상속받아 도메인에서 사용할 최상위 예외 클래스를 <code class="highlighter-rouge">DomainException</code>이라 하자. 다음 클래스 다이어그램에는 최상위 예외를 상속 받아 <code class="highlighter-rouge">HttpDomainException</code>을 다시 만들고 있다. 지난 1부에서 봤던 <code class="highlighter-rouge">Exception</code>과 <code class="highlighter-rouge">Throwable</code>의 상속 구조도 볼 수 있다.</p>
 
@@ -183,7 +183,7 @@
 
 <p>이하 코드들은 <a href="https://github.com/appkr/working-with-exceptions">깃허브에 공개</a> 되어 있다. 편의를 위해 원본에 있던 주석은 제거했다.</p>
 
-<h3 id="domainexception">2.1. <code class="highlighter-rouge">DomainException</code></h3>
+<h3 id="21-domainexception">2.1. <code class="highlighter-rouge">DomainException</code></h3>
 
 <p>도메인의 최상위 예외 클래스다. 도메인 로직을 수행하는 중에 발생하는 예외를 식별하기 위한 베이스 클래스다. 가령, 캐치한 예외를 HTTP 응답으로 내 보내야 한다면, 2.2 절에서 만들 <code class="highlighter-rouge">HttpDomainException</code>으로 다시 던지면 될 것이다.</p>
 
@@ -239,7 +239,7 @@
 </code></pre>
 </div>
 
-<h3 id="customdomainexcepion">2.2. <code class="highlighter-rouge">CustomDomainExcepion</code></h3>
+<h3 id="22-customdomainexcepion">2.2. <code class="highlighter-rouge">CustomDomainExcepion</code></h3>
 
 <p>도메인의 최상위 예외를 상속받아, 도메인에서 발생한 예외적인 상황을 식별하기 위한 클래스다. 가령 토큰을 파싱하는데 실패했다거나, 이메일 보내기에 실패했다거나, Guzzle HTTP 클라이언트로 다른 API 서버에 접속하는데 실패했다거나.. 등의 경우다.</p>
 
@@ -277,7 +277,7 @@
 </code></pre>
 </div>
 
-<h3 id="httpdomainexception">2.3. <code class="highlighter-rouge">HttpDomainException</code></h3>
+<h3 id="23-httpdomainexception">2.3. <code class="highlighter-rouge">HttpDomainException</code></h3>
 
 <p>이 클래스 역시 <code class="highlighter-rouge">DomainException</code>을 상속받고 있다. 예외 클래스에 따라 Http 응답을 카테고라이즈하기 위해 사용된다.</p>
 
@@ -350,7 +350,7 @@
 </code></pre>
 </div>
 
-<h3 id="customhttpexception">2.4. <code class="highlighter-rouge">CustomHttpException</code></h3>
+<h3 id="24-customhttpexception">2.4. <code class="highlighter-rouge">CustomHttpException</code></h3>
 
 <p>2.2 절에서 봤던 <code class="highlighter-rouge">FileCompressionFailed</code>와 같은 예외가 이 부류에 속한다.</p>
 
@@ -377,7 +377,7 @@
 </code></pre>
 </div>
 
-<h3 id="classifiable">2.5. <code class="highlighter-rouge">Classifiable</code></h3>
+<h3 id="25-classifiable">2.5. <code class="highlighter-rouge">Classifiable</code></h3>
 
 <p>이 인터페이스는 각 예외 클래스의 로그 레벨에 따라 로깅할 메서드(예: <code class="highlighter-rouge">debug()</code>, <code class="highlighter-rouge">error</code>)를 결정하고, 특정 레벨 이상의 심각도를 가진 예외이면 특별한 조치를 하기 위한 목적으로 만들어졌다.</p>
 
@@ -393,7 +393,7 @@
 </code></pre>
 </div>
 
-<h3 id="loglevel">2.6. <code class="highlighter-rouge">LogLevel</code></h3>
+<h3 id="26-loglevel">2.6. <code class="highlighter-rouge">LogLevel</code></h3>
 
 <p>로그 레벨 클래스다.</p>
 
@@ -472,11 +472,11 @@
 </code></pre>
 </div>
 
-<h2 id="section-2">3. 테스트 라우트 만들기</h2>
+<h2 id="3-테스트-라우트-만들기">3. 테스트 라우트 만들기</h2>
 
 <p>테스트를 위해 2절에서 만든 예외를 던지는 라우트를 만들고 작동을 확인하자.</p>
 
-<h3 id="section-3">3.1. 라우팅</h3>
+<h3 id="31-라우팅">3.1. 라우팅</h3>
 
 <div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span> <span class="c1">// routes/web.php
 </span>
@@ -520,7 +520,7 @@
 </code></pre>
 </div>
 
-<h3 id="section-4">3.2. 테스트</h3>
+<h3 id="32-테스트">3.2. 테스트</h3>
 
 <p>미리 만들어 둔 <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop">포스트맨</a> 콜렉션을 이용하면 편리하게 테스트할 수 있다.</p>
 
@@ -536,13 +536,13 @@
 
 <p>여기까지 <a href="https://github.com/appkr/working-with-exceptions/commit/4f85e78f4cd4f4b3f7ae61a3968fa0ada313d7c1">변경된 예제 소스 코드는 여기</a>서 확인할 수 있다.</p>
 
-<h2 id="section-5">4. 전역 예외 처리기에서 예외 소비하기</h2>
+<h2 id="4-전역-예외-처리기에서-예외-소비하기">4. 전역 예외 처리기에서 예외 소비하기</h2>
 
 <p>라라벨이 제공하는 전역 예외 처리기를 이용해서 프로그램의 실행 흐름을 안전에게 제어하고, 예외를 분류해서 적절하게 소비하는 방법을 구현해 볼 것이다.</p>
 
 <p>라라벨은 부팅할 때, 1부에서 살펴본대로 PHP의 <code class="highlighter-rouge">set_exception_handler()</code> 함수를 그대로 사용해서, 예외 처리기를 등록한다. <a href="https://github.com/laravel/framework/blob/5.3/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php#L35">여기</a>서 찾을 수 있다. 그리고 앞서 말한 예외 처리기를 <a href="https://github.com/laravel/laravel/blob/master/app/Exceptions/Handler.php#L9">애플리케이션 영역에서 상속</a>하여 개발자가 로직을 쓸 수 있도록 하고 있다. 전역 처리기는 <code class="highlighter-rouge">report()</code>와 <code class="highlighter-rouge">render()</code> 두 가지 메서드를 제공한다.</p>
 
-<h3 id="handlerreport">4.1. <code class="highlighter-rouge">Handler::report()</code></h3>
+<h3 id="41-handlerreport">4.1. <code class="highlighter-rouge">Handler::report()</code></h3>
 
 <p>리포팅을 하는 메서드다. 라라벨 로그를 기본으로 시스템 로그, 슬랙, LogStash, BugSnag, Loggly 등에 예외를 알리기 위한 메서드다.</p>
 
@@ -602,7 +602,7 @@ Stack trace:
 </code></pre>
 </div>
 
-<h3 id="handlerrender">4.3. <code class="highlighter-rouge">Handler::render()</code></h3>
+<h3 id="43-handlerrender">4.3. <code class="highlighter-rouge">Handler::render()</code></h3>
 
 <p>사용자에게 피드백을 제공하기 위한 메서드다. <code class="highlighter-rouge">env('APP_DEBUG') === true</code>이면 라라벨이 제공하는 기본 Whoops 페이지에 스택 트레이스를 포함한 HTTP 응답을 반환한다. 반대 경우에는 스택 트레이스를 제외한 Whoops 페이지가 제공된다. 스택 트레이스를 제외한 영역에는 파일의 전체 경로를 보여주지 않는다.</p>
 
@@ -667,9 +667,9 @@ Stack trace:
 
 <p>아이고!!! 엄청난 중복때문에 마음이 SOME~~ 불편하다. 우선 이 포스트의 주제를 벗어나므로 지금은 그냥 두자.</p>
 
-<h3 id="section-6">4.4. 테스트</h3>
+<h3 id="44-테스트">4.4. 테스트</h3>
 
-<h4 id="section-7">4.4.1. 포스트맨 테스트</h4>
+<h4 id="441-포스트맨-테스트">4.4.1. 포스트맨 테스트</h4>
 
 <p>앞서 받은 포스트맨 콜렉션을 그대로 이용할 수 있다.</p>
 
@@ -685,7 +685,7 @@ Stack trace:
 
 <p><a href="/images/2017-01-15-img-04.png"><img src="/images/2017-01-15-img-04.png" alt="포스트맨 통합 테스트" /></a></p>
 
-<h4 id="phpunit--">4.4.2. PHPUnit 동작 테스트</h4>
+<h4 id="442-phpunit-동작-테스트">4.4.2. PHPUnit 동작 테스트</h4>
 
 <p>예제 소스 코드에는 PHPUnit Functional Test도 작성해 두었다. 테스트 코드를 하나만 같이 살펴보자.</p>
 
@@ -715,7 +715,7 @@ Stack trace:
 
 <p>여기까지 <a href="https://github.com/appkr/working-with-exceptions/commit/1ced2b1430cc5741407d4e2df331e7d57a5644cd">변경된 예제 소스 코드는 여기</a>서 확인할 수 있다.</p>
 
-<h2 id="section-8">5. 전역 예외 처리기 리팩토링</h2>
+<h2 id="5-전역-예외-처리기-리팩토링">5. 전역 예외 처리기 리팩토링</h2>
 
 <p>4.3 절에서 작성한 렌더링 로직에 중복이 많고, <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID 원칙</a>에도 어긋나므로, <a href="https://en.wikipedia.org/wiki/Strategy_pattern">Strategy 패턴</a>을 이용해서 리팩토링해보자. 최종 폴더 구조는 이런 모양일 것이다.</p>
 
@@ -733,7 +733,7 @@ Stack trace:
 </code></pre>
 </div>
 
-<h3 id="section-9">5.1. 전역 예외 처리기</h3>
+<h3 id="51-전역-예외-처리기">5.1. 전역 예외 처리기</h3>
 
 <p>이렇게 간단해 질 수 있다.</p>
 
@@ -773,7 +773,7 @@ Stack trace:
 </code></pre>
 </div>
 
-<h3 id="section-10">5.2. 렌더러 클래스</h3>
+<h3 id="52-렌더러-클래스">5.2. 렌더러 클래스</h3>
 
 <p>클래스를 만들고 기존에 전역 예외 처리기에 있던 내용을 그대로 옮기면된다.</p>
 
@@ -816,7 +816,7 @@ Stack trace:
 
 <p>여기까지 <a href="https://github.com/appkr/working-with-exceptions/commit/d98232e20cfef7b629f3c1e3f1abe928dcb933aa">변경된 예제 소스 코드는 여기</a>서 확인할 수 있다.</p>
 
-<h2 id="section-11">6. 결론</h2>
+<h2 id="6-결론">6. 결론</h2>
 
 <p>10년의 공백 후 다시 프로그래밍 세계로 돌아온 2012년에는 객체 지향 프로그래밍을 전혀 몰랐고, 예외 같은 것은 당연히 쓸 줄 몰라 함수마다 <code class="highlighter-rouge">global $logs</code>를 남발했던 기억이 난다. 모던 프로그래밍에서 예외는 꼭 배워야 할 중요한 주제임에 틀림없다.</p>
 
@@ -838,7 +838,7 @@ Stack trace:
 </code></pre>
       </div>
 
-      <p>이 문제점은 PHP가 ArrayList와 HashMap(or Dictionary) 타입을 엄격하게 구분하지 않아 발생하는 문제로, 사용할 때 주의가 필요하다. 특히 Strong-typed Language를 사용하는 클라이언트에서 Type이 일관되지 않은 JSON 응답을 받아 모델에 맵핑하다보면 크래쉬가 발생할 수 있다는 점을 유의하자. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>이 문제점은 PHP가 ArrayList와 HashMap(or Dictionary) 타입을 엄격하게 구분하지 않아 발생하는 문제로, 사용할 때 주의가 필요하다. 특히 Strong-typed Language를 사용하는 클라이언트에서 Type이 일관되지 않은 JSON 응답을 받아 모델에 맵핑하다보면 크래쉬가 발생할 수 있다는 점을 유의하자.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
       <p>라라벨 프로젝트에서 PHPUnit의 <code class="highlighter-rouge">expectException()</code> 메서드 사용</p>
