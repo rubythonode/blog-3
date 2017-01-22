@@ -716,9 +716,9 @@ interface Renderable
 -   [bugsnag-integration](https://github.com/appkr/working-with-exceptions/tree/bugsnag-integration)
 -   [sentry-integration](https://github.com/appkr/working-with-exceptions/tree/sentry-integration)
 
-[![BugSnag Dashboard](/images/2017-01-15-img-05.png)](/images/2017-01-15-img-05.png)
+[![BugSnag Dashboard](/images/2017-01-15-img-06.png)](/images/2017-01-15-img-06.png)
 
-[![Sentry Dashboard](/images/2017-01-15-img-06.png)](/images/2017-01-15-img-06.png)
+[![Sentry Dashboard](/images/2017-01-15-img-05.png)](/images/2017-01-15-img-05.png)
 
 ---
 
@@ -763,8 +763,8 @@ interface Renderable
                     public function report(Exception $exception) {}
                     public function render($request, Exception $exception)
                     {
-                        // 부모의 render() 메서드를 완전히 덮어 쓰고
-                        // 받은 예외를 다시 던진다.
+                        // 부모의 render() 메서드를 완전히 덮어 써서
+                        // 기존 구현을 무력화시키고, 받은 예외는 다시 던진다.
                         throw $exception;
                     }
                 }
