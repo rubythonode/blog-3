@@ -493,3 +493,9 @@ Authorization: Basic dXNlckBleGFtcGxlLmNvbTpzZWNyZXQ=
 <div class="spacer">• • •</div>
 
 이번 포스트의 예제 프로젝트는 [https://github.com/appkr/fcm-scratchpad](https://github.com/appkr/fcm-scratchpad)에 공개되어 있다. 이 포스트에서 사용한 포스트맨 콜렉션은 [https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/fcm-scratchpad.postman_collection.json](https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/fcm-scratchpad.postman_collection.json)에서 받을 수 있다.
+
+## 덧.
+
+이 예제 프로젝트와 연동해서 작동하는 Android 예제 클라이언트를 brownsoo 님이 제공해 주셨습니다. 상세한 설명은 [https://github.com/brownsoo/fcm-scratchpad-android](https://github.com/brownsoo/fcm-scratchpad-android)를 참고해 주세요.
+
+[![Android Client Example](https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/image-04.png)](https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/image-04.png)
