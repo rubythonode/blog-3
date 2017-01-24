@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Jan 2017 21:47:47 +0900</pubDate>
-    <lastBuildDate>Sun, 22 Jan 2017 21:47:47 +0900</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2017 11:01:52 +0900</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2017 11:01:52 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -1655,6 +1655,12 @@ Authorization: Basic dXNlckBleGFtcGxlLmNvbTpzZWNyZXQ=
 &lt;div class=&quot;spacer&quot;&gt;• • •&lt;/div&gt;
 
 &lt;p&gt;이번 포스트의 예제 프로젝트는 &lt;a href=&quot;https://github.com/appkr/fcm-scratchpad&quot;&gt;https://github.com/appkr/fcm-scratchpad&lt;/a&gt;에 공개되어 있다. 이 포스트에서 사용한 포스트맨 콜렉션은 &lt;a href=&quot;https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/fcm-scratchpad.postman_collection.json&quot;&gt;https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/fcm-scratchpad.postman_collection.json&lt;/a&gt;에서 받을 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;덧&quot;&gt;덧.&lt;/h2&gt;
+
+&lt;p&gt;이 예제 프로젝트와 연동해서 작동하는 Android 예제 클라이언트를 brownsoo 님이 제공해 주셨습니다. 상세한 설명은 &lt;a href=&quot;https://github.com/brownsoo/fcm-scratchpad-android&quot;&gt;https://github.com/brownsoo/fcm-scratchpad-android&lt;/a&gt;를 참고해 주세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/image-04.png&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/appkr/fcm-scratchpad/master/docs/image-04.png&quot; alt=&quot;Android Client Example&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Dec 2016 00:00:00 +0900</pubDate>
         <link>http://blog.appkr.kr/work-n-play/firebase-cloud-message-php-server-implementation-part-2/</link>
