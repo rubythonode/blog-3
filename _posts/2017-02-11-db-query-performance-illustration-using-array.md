@@ -407,4 +407,4 @@ SQL|시나리오|3회 평균 처리 시간(ms)
 
 <div class="spacer">• • •</div>
 
-스택오버플로에 올라온 ['mysql 5.0 indexes - Unique vs Non Unique'](http://stackoverflow.com/a/389824/7511247)라는 질답의 좌표를 남기며 마칩니다. 링크의 내용을 요약하면 성능은 Primary > Unique > Index > Non-indexed 순이란 이야기입니다.
+스택오버플로에 올라온 ['mysql 5.0 indexes - Unique vs Non Unique'](http://stackoverflow.com/a/389824/7511247)라는 질답의 좌표를 남기며 마칩니다. 링크의 내용을 요약하면 성능은 ~~Primary > Unique > Index > Non-indexed~~ Primary > Unique & Non-Unique-Index > Non-indexed 순이란 이야기입니다.
