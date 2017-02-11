@@ -285,9 +285,9 @@ GET /indexed.php
 
 $found = null;
 
-foreach ($users as $found) {
-    if (strpos($found->name, '_9999') !== false) {
-        $found = $found;
+foreach ($users as $user) {
+    if (strpos($user->name, '_9999') !== false) {
+        $found = $user;
     }
 }
 
