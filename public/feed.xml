@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Feb 2017 03:34:18 +0900</pubDate>
-    <lastBuildDate>Sun, 12 Feb 2017 03:34:18 +0900</lastBuildDate>
+    <pubDate>Sun, 12 Feb 2017 03:38:51 +0900</pubDate>
+    <lastBuildDate>Sun, 12 Feb 2017 03:38:51 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -145,7 +145,7 @@
 
 &lt;h3 id=&quot;22-users-배열&quot;&gt;2.2. &lt;code class=&quot;highlighter-rouge&quot;&gt;$users&lt;/code&gt; 배열&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;User&lt;/code&gt; 인스턴스 만 개를 담은 배열입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;Faker&lt;/code&gt; 라이브러리와 같이 동작해서 매번 테스트 시나리오를 수행할 때마다 지난 번과 다른 10만개의 배열을 새로 만듭니다. 각 인스턴스는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Team&lt;/code&gt; 모델에 &lt;code class=&quot;highlighter-rouge&quot;&gt;team_id&lt;/code&gt;라는 속성으로 연결되어 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;User&lt;/code&gt; 인스턴스 만 개를 담은 배열입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;Faker&lt;/code&gt; 라이브러리와 같이 동작해서 매번 테스트 시나리오를 수행할 때마다 지난 번과 다른 일 만 개의 배열을 새로 만듭니다. 각 인스턴스는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Team&lt;/code&gt; 모델에 &lt;code class=&quot;highlighter-rouge&quot;&gt;team_id&lt;/code&gt;라는 속성으로 연결되어 있습니다.&lt;/p&gt;
 
 &lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// data/users.php
 &lt;/span&gt;
