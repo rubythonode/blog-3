@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Feb 2017 03:28:53 +0900</pubDate>
-    <lastBuildDate>Sun, 12 Feb 2017 03:28:53 +0900</lastBuildDate>
+    <pubDate>Sun, 12 Feb 2017 03:34:18 +0900</pubDate>
+    <lastBuildDate>Sun, 12 Feb 2017 03:34:18 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -586,7 +586,7 @@
 
 &lt;div class=&quot;spacer&quot;&gt;• • •&lt;/div&gt;
 
-&lt;p&gt;스택오버플로에 올라온 &lt;a href=&quot;http://stackoverflow.com/a/389824/7511247&quot;&gt;‘mysql 5.0 indexes - Unique vs Non Unique’&lt;/a&gt;라는 질답의 좌표를 남기며 마칩니다. 링크의 내용을 요약하면 성능은 Primary &amp;gt; Unique &amp;gt; Index &amp;gt; Non-indexed 순이란 이야기입니다.&lt;/p&gt;
+&lt;p&gt;스택오버플로에 올라온 &lt;a href=&quot;http://stackoverflow.com/a/389824/7511247&quot;&gt;‘mysql 5.0 indexes - Unique vs Non Unique’&lt;/a&gt;라는 질답의 좌표를 남기며 마칩니다. 링크의 내용을 요약하면 성능은 &lt;del&gt;Primary &amp;gt; Unique &amp;gt; Index &amp;gt; Non-indexed&lt;/del&gt; Primary &amp;gt; Unique &amp;amp; Non-Unique-Index &amp;gt; Non-indexed 순이란 이야기입니다.&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Feb 2017 01:00:00 +0900</pubDate>
         <link>http://blog.appkr.kr/work-n-play/db-query-performance-illustration-using-array/</link>
