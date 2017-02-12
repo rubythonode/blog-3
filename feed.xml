@@ -5,8 +5,8 @@
     <description>appkr's blog to record day-to-day life &amp; thoughts.</description>
     <link>http://blog.appkr.kr/</link>
     <atom:link href="http://blog.appkr.kr/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Feb 2017 03:38:51 +0900</pubDate>
-    <lastBuildDate>Sun, 12 Feb 2017 03:38:51 +0900</lastBuildDate>
+    <pubDate>Sun, 12 Feb 2017 12:38:29 +0900</pubDate>
+    <lastBuildDate>Sun, 12 Feb 2017 12:38:29 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -191,7 +191,7 @@
 
 &lt;p&gt;1 절의 테스트 러너에서 봤듯이 데이터 생성이 끝난 후 타이머를 시작하고, 테스터가 선택한 시나리오를 수행합니다.&lt;/p&gt;
 
-&lt;p&gt;이하 모든 실험 환경은 필자의 맥북 프로기준이며, PHP 7.1과 &lt;a href=&quot;https://laravel.kr/docs/valet&quot;&gt;라라벨 Valet 서버&lt;/a&gt;를 이용했습니다.&lt;/p&gt;
+&lt;p&gt;이하 모든 실험 환경은 필자의 맥북 프로기준이며, PHP 7.1(xdebug on, opcache off)과 &lt;a href=&quot;https://laravel.kr/docs/valet&quot;&gt;라라벨 Valet 서버&lt;/a&gt;를 이용했습니다.&lt;/p&gt;
 
 &lt;h3 id=&quot;31-primary-시나리오&quot;&gt;3.1. &lt;code class=&quot;highlighter-rouge&quot;&gt;primary&lt;/code&gt; 시나리오&lt;/h3&gt;
 
